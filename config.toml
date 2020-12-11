@@ -1,0 +1,77 @@
+RelativeURLs=true
+CanonifyURLs=true
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "AppDynamics Workshop"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+uglyurls = true
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+enableEmoji = true
+
+[params]
+  description = "AppDynamics Workshop"
+  author = "James Schneider"
+  disableBreadcrumb = false
+  disableNextPrev = false
+  themeVariant = "aws"
+  disableSearch = false
+  disableAssetsBusting = true
+  disableLanguageSwitchingButton = false
+  disableShortcutsTitle = true
+  disableInlineCopyToClipBoard = false
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = true
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[Languages]
+[Languages.en]
+title = "AppDynamics Workshop"
+weight = 1
+languageName = "English"
+
+[Languages.fr]
+title = "Mon atelier AWS"
+weight = 2
+languageName = "Français"
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage"
+url = "https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"
+weight = 10
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-chalkboard-teacher'></i> Monitor Kubentes with Confidence"
+url = "https://www.appdynamics.com/resources/ebook/how-to-monitor-kubernetes-with-confidence"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> 6 Business iQ Use Cases"
+url = "https://www.appdynamics.com/c/dam/r/appdynamics/general-documents/use-cases/biq-use-case-guide-2020.pdf"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> K8s Monitoring Best Practices"
+url = "https://www.appdynamics.com/solutions/cloud/cloud-monitoring/kubernetes-monitoring/how-to-monitor-kubernetes-best-practices"
+weight = 40
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> Scaling Kubernetes with AppD"
+url = "https://www.appdynamics.com/blog/product/scaling-kubernetes-observability/"
+weight = 50
+
