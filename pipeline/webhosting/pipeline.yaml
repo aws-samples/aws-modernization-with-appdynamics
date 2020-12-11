@@ -11,23 +11,23 @@ Parameters:
   ProjectName:
     Type: String
     Description: Project Name
-    Default: xxxxxxx
+    Default: appd-modernization
   WebsiteBucket:
     Type: String
     Description: Website S3 bucket name
-    Default: xxxxxxx.awsworkshop.io 
+    Default: appd-modernization.awsworkshop.io 
   CloudFrontDistroId:
     Type: String
     Description: CloudFront distribution ID 
-    Default: yyyyyyy
+    Default: E18B1JV5QN6VUU
   GitHubRepo:
     Type: String
     Description: repo name
-    Default: aws-modernization-xxxxxxx
+    Default: aws-modernization-with-appdynamics
   FullRepoURL:
     Type: String
     Description: The full url to the repo
-    Default: https://github.com/aws-samples/aws-modernization-xxxxxxxx.git  
+    Default: https://github.com/aws-samples/aws-modernization-with-appdynamics.git  
   GitHubOwner:
     Type: String
     Description: GitHub owner name
