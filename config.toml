@@ -3,8 +3,8 @@ CanonifyURLs=true
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "AppDynamics Workshop"
-theme = "learn"
+title = "AppDynamics Modernization Workshop"
+theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
