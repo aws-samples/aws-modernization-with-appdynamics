@@ -39,17 +39,6 @@ hrefTargetBlank = true
     [markup.goldmark.renderer]
       unsafe = true
 
-[Languages]
-[Languages.en]
-title = "AppDynamics Workshop"
-weight = 1
-languageName = "English"
-
-[Languages.fr]
-title = "Mon atelier AWS"
-weight = 2
-languageName = "Français"
-
 [[menu.shortcuts]]
 name = "<i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage"
 url = "https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"
