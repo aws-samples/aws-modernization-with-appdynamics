@@ -7,7 +7,6 @@ title = "AppDynamics Modernization Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
-
 uglyurls = true
 sectionPagesMenu = "main"
 pygmentsCodeFences = true
@@ -19,7 +18,7 @@ enableEmoji = true
   author = "James Schneider"
   disableBreadcrumb = false
   disableNextPrev = false
-  themeVariant = "aws"
+  themeVariant = "mine"
   disableSearch = false
   disableAssetsBusting = true
   disableLanguageSwitchingButton = false
