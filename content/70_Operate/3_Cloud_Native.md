@@ -129,7 +129,7 @@ From here we can **see all of the services and AWS components involved in this b
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 
-We'll **summarize what we've learned** and **start wrapping up the workshop!** 
+We'll **summarize what we've leared** and **start wrapping up the workshop!** 
 
 
 <!---

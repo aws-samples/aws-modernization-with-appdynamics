@@ -3,11 +3,10 @@ CanonifyURLs=true
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "AppDynamics Workshop"
-theme = "learn"
+title = "AppDynamics Modernization Workshop"
+theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
-
 uglyurls = true
 sectionPagesMenu = "main"
 pygmentsCodeFences = true
@@ -19,7 +18,7 @@ enableEmoji = true
   author = "James Schneider"
   disableBreadcrumb = false
   disableNextPrev = false
-  themeVariant = "aws"
+  themeVariant = "mine"
   disableSearch = false
   disableAssetsBusting = true
   disableLanguageSwitchingButton = false
@@ -38,17 +37,6 @@ hrefTargetBlank = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-[Languages]
-[Languages.en]
-title = "AppDynamics Workshop"
-weight = 1
-languageName = "English"
-
-[Languages.fr]
-title = "Mon atelier AWS"
-weight = 2
-languageName = "Français"
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage"
