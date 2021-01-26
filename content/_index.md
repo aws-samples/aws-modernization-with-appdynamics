@@ -12,7 +12,7 @@ weight: 1
 
 ## Welcome to the Advanced Observability with AppDynamics workshop!
 
-#### In this workshop you will learn how Appdynamics Observability can help you apply modernization strategies that keep your digital-first organization moving at speed, ensure operational optimization, avoid unnecessary risks, and maximize your innovation!
+#### In this workshop you will learn how AppDynamics Observability can help you apply modernization strategies that keep your digital-first organization moving at speed, ensure operational optimization, avoid unnecessary risks, and maximize your innovation!
 
 &nbsp;
 <br>
@@ -23,7 +23,7 @@ weight: 1
 
 
 
-#### Throughout the workshop you will experience how a ficticious firm, AD Financial corporation used Appdynamics Observability to overcome their application modernization challenges, as well as how Appdynamics provides visibilty catering to perspectives of the different personas of their teams as they work together to modernize and optimize their applications and operations to maximize innovation in a highly competitive market.
+#### Throughout the workshop you will experience how a ficticious firm, AD Financial corporation used AppDynamics Observability to overcome their application modernization challenges, as well as how AppDynamics provides visibilty catering to perspectives of the different personas of their teams as they work together to modernize and optimize their applications and operations to maximize innovation in a highly competitive market.
 
 ## Learning Objectives
 ##### &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Gain real-time visibility of your application topology including all components, dependencies, and activities as they are automatically discovered and mapped out.
