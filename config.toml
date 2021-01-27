@@ -24,6 +24,10 @@ enableEmoji = true
   disableLanguageSwitchingButton = false
   disableShortcutsTitle = true
   disableInlineCopyToClipBoard = false
+  # AppDynamics EUM application key
+  eumAppKey = "AD-AAB-ABB-KUW"
+  # AppDynamics EUM version
+  eumVersion = "20.9.0.3268"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
