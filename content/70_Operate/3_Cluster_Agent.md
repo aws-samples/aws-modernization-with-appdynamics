@@ -1,7 +1,7 @@
 +++
 title = "Cluster Agent"
 chapter = false
-weight = 2
+weight = 3
 +++
 
 ![image](/images/operate/ad_team_cloudops.png)

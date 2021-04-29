@@ -15,7 +15,7 @@ Make sure you have run the teardown script in the previous section before deleti
 
 
 
-<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span>  Ensure the AppDynamics-Workshop environment is selected, then click the Delete button
+<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span>  Ensure the AppD-Workshop environment is selected, then click the Delete button
 
 ![image](/images/wrapup/cloud9_01.png)
 

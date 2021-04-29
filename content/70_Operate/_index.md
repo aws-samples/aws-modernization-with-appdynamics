@@ -39,6 +39,8 @@ Now let's take a look at **some of the other valuable assets** within the AppDyn
 
 <br>
 
+<!--
+
 {{% notice info %}}
 **Optional:**  You can explore the artifacts that were utilized to deploy the application and AppDynamics agents associated with this section by navigating to the following directories listed below that are located on your Cloud9 instance: 
 {{% /notice %}}
@@ -48,12 +50,8 @@ Now let's take a look at **some of the other valuable assets** within the AppDyn
 
 /home/ec2-user/environment/deployment/post-mod-kube-ca
 ```
-
+-->
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 
-In the next section we'll look at how you can **unlock the power of machine learning and AI** to deliver world-class user experience **with AppDynamics Cognition Engine**.
-
-
-
-
+Now it's time to deploy the **Cluster Agent** to the EKS cluster.

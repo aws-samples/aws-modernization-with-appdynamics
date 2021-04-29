@@ -1,7 +1,7 @@
 +++
 title = "Cloud Native"
 chapter = false
-weight = 3
+weight = 4
 +++
 
 ![image](/images/operate/ad_team_cloudops.png) 
@@ -62,7 +62,7 @@ Let's start by finding the AD Financial APM (**App Performance Monitoring**) app
 ![image](/images/operate/cloud_native_00.png)
 
 {{% notice info %}}
-You may need to try using a different browser if you're not seeing all the metrics and details as seen in the example images.
+You may need to try using a different browser and or select a longer time range if you're not seeing all the metrics and details as seen in the example images.
 {{% /notice %}}
 
 ## Services Perspective

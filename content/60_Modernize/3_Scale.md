@@ -1,7 +1,7 @@
 +++
 title = "Scale"
 chapter = false
-weight = 2
+weight = 3
 +++
 
 ![image](/images/modernize/ad_team_developer.png)

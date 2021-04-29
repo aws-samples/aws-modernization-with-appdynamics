@@ -28,7 +28,7 @@ cd /home/ec2-user/environment
 
 <br>
 
-Now that you've got all the prerequisites out of the way, you can kick off the final setup steps and go grab a cup of coffee <i class='fas fa-coffee'></i> while the setup utility does the rest.
+Now that you've got all the prerequisites out of the way, you can kick off the initial setup steps and go grab a cup of coffee <i class='fas fa-coffee'></i> while the setup utility runs.
 
 <span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Ensure you are in your home directory by executing the command below:
 
@@ -57,7 +57,7 @@ chmod +x setupWorkshop.sh
 export appd_workshop_user=<YOUR USER NAME>
 ```
 
-<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use the command below to execute the setup script::
+<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use the command below to execute the setup script:
 
 ```
 ./setupWorkshop.sh
@@ -65,16 +65,15 @@ export appd_workshop_user=<YOUR USER NAME>
 
 
 {{% notice info %}}
-<span><i class='fas fa-hourglass-half fa-lg'></i></span> The setup utility takes **approximately 28 minutes to complete**.  While you're waiting for the setup to finish you can **go to the AppDynamics Advantage section** where you can **find out why AD Financial selected AppDynamics** as their **preferred observability solution**. <span><i class='fas fa-hourglass-half fa-lg'></i></span>
+<span><i class='fas fa-hourglass-half fa-lg'></i></span> The setup utility takes **approximately 7 minutes to complete**.  While you're waiting for the setup to finish you can **go to the AppDynamics Advantage section** where you can **find out why AD Financial selected AppDynamics** as their **preferred observability solution**. <span><i class='fas fa-hourglass-half fa-lg'></i></span>
 {{% /notice %}}
 
 
 
-<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> The output from the setup script when the EKS cluster is created, should look like this:
+<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> The output from the start of the setup script should look like this:
 
-<span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-sm'></i></span> EKS cluster creation as part of the complete setup, takes approximately 15 minutes of the total time.
 
-![image](/images/workshop_setup/setup-output-eks.png)
+![image](/images/workshop_setup/setup-output-start.png)
 
 
 <span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> The output from the setup script when it ends, should look like this:
@@ -83,9 +82,6 @@ export appd_workshop_user=<YOUR USER NAME>
 
 
 ## What the setup utility does
-
-![image](/images/workshop_setup/arch_diagram.png)
-
 
 **01)** Installs Java JDK 1.8 <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
@@ -117,21 +113,9 @@ export appd_workshop_user=<YOUR USER NAME>
 
 **15)** Adds the RBAC User in the AppDynamics Controller to the appropriate RBAC Roles <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
-**16)** Creates the EKS Cluster <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
+**16)** Deploys the Pre-Modernization application to your local C9 instance <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
-**17)** Deploys the Post-Modernization application to the EKS Cluster <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
-
-**18)** Waits for the application to initialize in the EKS Cluster
-
-**19)** Deploys the AppDynamics Machine agent to the EKS Cluster <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
-
-**20)** Deploys the AppDynamics Cluster agent to EKS Cluster <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
-
-**21)** Exposes the website front end with an ELB in the EKS Cluster <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
-
-**22)** Deploys the Pre-Modernization application to your local C9 instance <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
-
-**23)** Creates the teardwown file
+**17)** Creates the teardwown file
 
 
 Using a shell script - <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
@@ -139,6 +123,25 @@ Using a shell script - <span style="color: #4e3eb1;"><i class='fas fa-asterisk f
 Using the AWS Java SDK - <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
 Using the AppDynamics REST API - <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
+
+
+## Additional setup in following sections
+
+There will be some additional setup steps in the following sections listed below.  There's no need to do them now.  Wait until you've reached those sections to perform the steps for each section.
+
+<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Modernize Section
+
+ - Create the EKS Cluster
+ - Deploy the Application to EKS
+ - Deploy the Server Agent to EKS
+
+<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Operate Section
+
+ - Deploy the Cluster Agent to EKS
+
+## What the final architecture will look like
+
+![image](/images/workshop_setup/arch_diagram.png)
 
 <br>
 
