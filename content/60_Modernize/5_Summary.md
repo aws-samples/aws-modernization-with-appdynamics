@@ -1,7 +1,7 @@
 +++
 title = "Summary"
 chapter = false
-weight = 4
+weight = 5
 +++
 
 ![image](/images/modernize/ad_team_developer.png)

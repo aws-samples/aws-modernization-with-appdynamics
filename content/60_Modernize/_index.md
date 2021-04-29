@@ -41,7 +41,7 @@ AWS offers multiple services for container orchestration and storage.  After car
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #efc100;"><i class='fas fa-certificate'></i></span>&nbsp; **AWS Relational Database Service (RDS)**
 
-
+<br>
 
 For container orchestration **EKS aligns well with the teams requirements**, having the ability **to automate scaling, managing, updating, and removing containers at will** without incurring any system downtime.
 
@@ -51,6 +51,8 @@ For container orchestration **EKS aligns well with the teams requirements**, hav
 
 ![image](/images/modernize/app_arch_diag.png)
 
+
+<!--
 
 {{% notice info %}}
 **Optional:**  You can explore the artifacts that were utilized to deploy the application and AppDynamics agents associated with this section by navigating to the following directories listed below that are located on your Cloud9 instance: 
@@ -65,7 +67,8 @@ For container orchestration **EKS aligns well with the teams requirements**, hav
 
 /home/ec2-user/environment/deployment/post-mod-kube-ma
 ```
+-->
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 
-Let’s follow Alex and his team as they **utilize AppDynamics, having purpose built integrations for AWS** that **provides application performance monitoring continuity** throughout the **entire application modernization architecture lifecycle**. 
+Now it's time to **create the EKS cluster**, deploy the application to the cluster, and look at how the AppDynamics agents are configured and deployed along with the application. 

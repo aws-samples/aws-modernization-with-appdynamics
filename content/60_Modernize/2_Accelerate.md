@@ -1,7 +1,7 @@
 +++
 title = "Accelerate"
 chapter = false
-weight = 1
+weight = 2
 +++
 
 ![image](/images/modernize/ad_team_developer.png)

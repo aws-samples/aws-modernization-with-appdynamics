@@ -1,7 +1,7 @@
 +++
 title = "Cognition Engine"
 chapter = false
-weight = 1
+weight = 2
 +++
 
 ![image](/images/operate/ad_team_cloudops.png)

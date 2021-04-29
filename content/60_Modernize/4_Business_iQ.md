@@ -1,7 +1,7 @@
 +++
 title = "Business iQ"
 chapter = false
-weight = 3
+weight = 4
 +++
 
 

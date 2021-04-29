@@ -65,7 +65,7 @@ You **must use** the **Amazon Linux 2** platform type for this workshop.  If the
 ## Select your options
 
 - Select **Create environment**
-- Name it **AppDynamics-Workshop**, click Next.
+- Name it **AppD-Workshop**, click Next.
 - Choose **t3.large** for instance type, ensure **Amazon Linux 2** is selcted as the platform, choose **After four hours** for cost saving setting, as seen below.
 
 
