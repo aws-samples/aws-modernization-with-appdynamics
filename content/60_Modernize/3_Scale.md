@@ -41,7 +41,7 @@ In addition to the flow map reflecting all of the changes in the real time topol
 
 **2 .**  Notice the sub-second response time for all the S3 calls.
 
-You can read more about Remote Services <a href="https://docs.appdynamics.com/display/latest/Remote+Services" target="_blank">**here**</a>
+You can read more about Remote Services <a href="https://docs.appdynamics.com/latest/en/application-monitoring/remote-services" target="_blank">**here**</a>
 
 ![image](/images/modernize/remote_services_00.png)
 

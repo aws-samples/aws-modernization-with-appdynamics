@@ -36,7 +36,7 @@ Notice where we've defined the name of the cluster, the region and availability 
 ![image](/images/modernize/kube-conf-01.png)
 
 {{% notice warning %}}
-You must **have enough available VPCs, Elastic IPs, and NAT Gatweways in the region you are working in** to successfully **create an EKS Cluster** with a managed node group of 2 nodes.  If you **run into a problem** during the setup, it is **usually associated with insufficient resources or permissions in your AWS account**.  You can resolve resource constraints by <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html" target="_blank">**requesting a quota increase**</a> for your AWS account.
+You must **have enough available VPCs, Elastic IPs, and NAT Gateways in the region you are working in** to successfully **create an EKS Cluster** with a managed node group of 2 nodes.  If you **run into a problem** during the setup, it is **usually associated with insufficient resources or permissions in your AWS account**.  You can resolve resource constraints by <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html" target="_blank">**requesting a quota increase**</a> for your AWS account.
 {{% /notice %}}
 
 Go ahead and create the EKS cluster using the commands below:
@@ -70,7 +70,7 @@ The image below shows what the output looks like for the application deployment 
 ![image](/images/modernize/kube-deploy-02.png)
 
 
-Let's take a look at how the application and the Java APM agent were configured for EKS deployment.  We've used the **config-map.yaml** file to define the properties needed by the agent to connect to the controller.  The setup script you executed in the workshop setup section, auto-populated the agent to controller configuration properties for you just like the **application.env** file used for the Docker Compose application.  You can read more about the Agent to Controller Connection properties <a href="https://docs.appdynamics.com/display/latest/Agent-to-Controller+Connections" target="_blank">**here**</a>
+Let's take a look at how the application and the Java APM agent were configured for EKS deployment.  We've used the **config-map.yaml** file to define the properties needed by the agent to connect to the controller.  The setup script you executed in the workshop setup section, auto-populated the agent to controller configuration properties for you just like the **application.env** file used for the Docker Compose application.  You can read more about the Agent to Controller Connection properties <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/agent-to-controller-connections" target="_blank">**here**</a>
 
 Take a look at the **config-map.yaml** file using the commands below:
 
@@ -127,10 +127,10 @@ Starting on **line 26** we see the first part of the **definition for the *"acco
 ![image](/images/modernize/kube-conf-05.png)
 
 
-You can read more about using the Java Agent with Init Containers <a href="https://docs.appdynamics.com/display/latest/Install+the+Java+Agent+in+Containers#InstalltheJavaAgentinContainers-init" target="_blank">**here**</a>
+You can read more about using the Java Agent with Init Containers <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#InstalltheJavaAgentinContainers-init" target="_blank">**here**</a>
 
 
-You can read more about building the Java Agent into your own Docker Image <a href="https://docs.appdynamics.com/display/latest/Install+the+Java+Agent+in+Containers#InstalltheJavaAgentinContainers-dockerfile" target="_blank">**here**</a>
+You can read more about building the Java Agent into your own Docker Image <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#InstalltheJavaAgentinContainers-dockerfile" target="_blank">**here**</a>
 
 <br>
 
@@ -207,7 +207,7 @@ Once the database agent is running with a specific name, its name should appear 
 
 You can see that we have used the "root" username and password to connect to the database and monitor it.  The recommended practice is to create a specific database user in the database and apply specific permissions to it for monitoring purposes.
 
-You can read more about deploying the database agent and configuring collectors <a href="https://docs.appdynamics.com/display/latest/Administer+the+Database+Agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/display/latest/Add+Database+Collectors" target="_blank">**here**</a>
+You can read more about deploying the database agent and configuring collectors <a href="https://docs.appdynamics.com/latest/en/database-visibility/administer-the-database-agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/latest/en/database-visibility/add-database-collectors" target="_blank">**here**</a>
 
 ![image](/images/modernize/kube-conf-07.png)
 

@@ -89,7 +89,7 @@ We can observe the performance increase seen for the pages associated with loan 
 
 From here you can understand the breakdown of the End User Response Time for this page.  The waterfall graph shown below displays the average times for the time frame selected for each aspect of the page load process. For more information on each of the metric measurements, hover over its name on the left. A popup appears with a definition of the metric.
 
-You can read more about the Browser Page Timing Breakdown <a href="https://docs.appdynamics.com/display/latest/Page+and+IFrame+Dashboards" target="_blank">**here**</a>
+You can read more about the Browser Page Timing Breakdown <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/browser-rum-metrics" target="_blank">**here**</a>
 
 ![image](/images/modernize/brum_app_01.png)
 

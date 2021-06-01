@@ -42,18 +42,18 @@ You can use Application Analytics with the APM, Browser RUM, Mobile RUM, and Bro
 
 #### Analytics Data Collection
 
-- <a href="https://docs.appdynamics.com/display/latest/Collect+Transaction+Analytics+Data" target="_blank">**Collect Transaction Analytics Data**</a>
-- <a href="https://docs.appdynamics.com/display/latest/Collect+Log+Analytics+Data" target="_blank">**Collect Log Analytics Data**</a>
-- <a href="https://docs.appdynamics.com/display/latest/Business+Transaction+and+Log+Correlation" target="_blank">**Business Transaction and Log Correlation**</a>
-- <a href="https://docs.appdynamics.com/display/latest/Collect+Business+Data+From+SQL+Calls" target="_blank">**Collect Business Data From SQL Calls**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/collect-transaction-analytics-data" target="_blank">**Collect Transaction Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/collect-log-analytics-data" target="_blank">**Collect Log Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/business-transaction-and-log-correlation" target="_blank">**Business Transaction and Log Correlation**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/collect-transaction-analytics-data/collect-business-data-from-sql-calls" target="_blank">**Collect Business Data From SQL Calls**</a>
 
 
 #### Using Application Analytics
 
-- <a href="https://docs.appdynamics.com/display/latest/Business+Journeys" target="_blank">**Business Journeys**</a>
-- <a href="https://docs.appdynamics.com/display/latest/Experience+Level+Management" target="_blank">**Experience Level Management**</a>
-- <a href="https://docs.appdynamics.com/display/latest/Search+Analytics+Data" target="_blank">**Search Analytics Data**</a>
-- <a href="https://docs.appdynamics.com/display/latest/Visualize+Analytics+Data" target="_blank">**Visualize Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/business-journeys" target="_blank">**Business Journeys**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/experience-level-management" target="_blank">**Experience Level Management**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/search-analytics-data" target="_blank">**Search Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/visualize-analytics-data" target="_blank">**Visualize Analytics Data**</a>
 
 
 ## View the Loan Approval Modernization Comparison

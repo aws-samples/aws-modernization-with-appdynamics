@@ -132,7 +132,7 @@ Once you're in the **Tier level Flow Map**, you can see that the view has change
 
 **4 .**  You can explore the **Node level Flow Map** by drilling in here.
 
-You can read more about Flow Maps <a href="https://docs.appdynamics.com/display/latest/Flow+Maps" target="_blank">**here**</a>
+You can read more about Flow Maps <a href="https://docs.appdynamics.com/latest/en/application-monitoring/business-applications/flow-maps" target="_blank">**here**</a>
 
 ![image](/images/mobilize/flowmap_topology_04.png)
 
