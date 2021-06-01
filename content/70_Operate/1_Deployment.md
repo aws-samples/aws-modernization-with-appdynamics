@@ -59,7 +59,7 @@ The image below shows what the output looks like for Cluster Agent deployment.
 ![image](/images/operate/kube-deploy-01.png)
 
 
-You can read more about deploying the Cluster Agent <a href="https://docs.appdynamics.com/display/latest/Install+the+Cluster+Agent" target="_blank">**here**</a>
+You can read more about deploying the Cluster Agent <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/monitor-kubernetes-with-the-cluster-agent/install-the-cluster-agent" target="_blank">**here**</a>
 
 
 ## Next <i class='fas fa-cog fa-spin'></i>

@@ -41,16 +41,16 @@ The Browser App Overview dashboard displays a set of configurable widgets.
 - Top 10 Browsers and Devices
 - Top 5 Pages and Countries by Total Requests
 
-You can read more about the Browser Application Overview dashboard <a href="https://docs.appdynamics.com/display/latest/Browser+App+Dashboard" target="_blank">**here**</a>
+You can read more about the Browser Application Overview dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard" target="_blank">**here**</a>
 
 **2 .**  Take a moment to explore the:
 
 - **Geo Dashboard**
-  - You can read more about the Browser Application Geo dashboard <a href="https://docs.appdynamics.com/display/latest/Browser+App+Dashboard#BrowserAppDashboard-geo" target="_blank">**here**</a>
+  - You can read more about the Browser Application Geo dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#BrowserAppDashboard-geoGeoTab" target="_blank">**here**</a>
 - **Browser Snapshots**
-  - You can read more about the Browser Snapshots <a href="https://docs.appdynamics.com/display/latest/Browser+Snapshots" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/display/latest/Page+Browser+Snapshots" target="_blank">**here**</a>
+  - You can read more about the Browser Snapshots <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots/page-snapshots" target="_blank">**here**</a>
 - **Usage Stats**
-  - You can read more about the Browser Application Usage Stats dashboard <a href="https://docs.appdynamics.com/display/latest/Browser+App+Dashboard#BrowserAppDashboard-usage-stats" target="_blank">**here**</a>
+  - You can read more about the Browser Application Usage Stats dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#BrowserAppDashboard-usagestatsUsageStats" target="_blank">**here**</a>
 
 
 **3 .**  Click on the **Pages & AJAX Requests** on the left to get a **breakdown of metrics for each web page including End User Response Time**.
@@ -78,7 +78,7 @@ The Base Page Dashboard shows you how a web page has been performing over time, 
 
 **1 .**  At the top of the Base Page dashboard you will see key performance indicators, End User Response Time, Load, Cache Hits, and Page Views with JS errors across the period selected in the timeframe dropdown from the upper-right side of the Controller UI. Cache Hits indicates resources fetched from a cache, such as a CDN, rather than from the source.
 
-**2 .**  In the Timing Breakdown section you will see a waterfall graph that displays the average times needed for each aspect of the page load process. For more information on what each of the metrics measures, hover over its name on the left. A popup appears with a definition. For more detailed information, see <a href="https://docs.appdynamics.com/display/latest/Page+and+IFrame+Dashboards" target="_blank">**Browser RUM Metrics**</a>
+**2 .**  In the Timing Breakdown section you will see a waterfall graph that displays the average times needed for each aspect of the page load process. For more information on what each of the metrics measures, hover over its name on the left. A popup appears with a definition. For more detailed information, see <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/browser-rum-metrics" target="_blank">**Browser RUM Metrics**</a>
 
 ![image](/images/mobilize/brum_app_03.png)
 

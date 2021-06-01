@@ -7,7 +7,7 @@ weight = 5
 ![image](/images/workshop_setup/ad_team_tech_lead.png)
 
 {{% notice warning %}}
-You must **have enough available VPCs, Elastic IPs, and NAT Gatweways in the region you are working in** to successfully **create an EKS Cluster** with a managed node group of 2 nodes.  You also need to have space for three S3 Buckets. If you **run into a problem** during the setup, it is **usually associated with insufficient resources or permissions in your AWS account**.  You can resolve resource constraints by <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html" target="_blank">**requesting a quota increase**</a> for your AWS account.
+You must **have enough available VPCs, Elastic IPs, and NAT Gatewways in the region you are working in** to successfully **create an EKS Cluster** with a managed node group of 2 nodes.  You also need to have space for three S3 Buckets. If you **run into a problem** during the setup, it is **usually associated with insufficient resources or permissions in your AWS account**.  You can resolve resource constraints by <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html" target="_blank">**requesting a quota increase**</a> for your AWS account.
 {{% /notice %}}
 
 {{% notice warning %}}
@@ -95,7 +95,7 @@ export appd_workshop_user=<YOUR USER NAME>
 
 **06)** Installs the AppDynamics Database agent <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
-**07)** Creates an EC2 security group for extenal access to RDS Databases <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
+**07)** Creates an EC2 security group for external access to RDS Databases <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
 **08)** Creates RDS databases with the security group attached <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
@@ -115,7 +115,7 @@ export appd_workshop_user=<YOUR USER NAME>
 
 **16)** Deploys the Pre-Modernization application to your local C9 instance <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>
 
-**17)** Creates the teardwown file
+**17)** Creates the teardown file
 
 
 Using a shell script - <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span>

@@ -40,14 +40,14 @@ Once you're in the **Business Transaction level Flow Map**, you can see that the
 
 **2 .**  Click on the **Slow Response Times** tab to look at specific instances where this transaction was slow.
 
-You can read more about Business Transactions <a href="https://docs.appdynamics.com/display/latest/Business+Transactions" target="_blank">**here**</a>
+You can read more about Business Transactions <a href="https://docs.appdynamics.com/latest/en/application-monitoring/business-transactions" target="_blank">**here**</a>
 
 ![image](/images/mobilize/biz_txns_01.png)
 
 
 ## Transaction Snapshots
 
-AppDynamics **monitors and records every execution of a business transaction** in the instrumented environment. However, for troubleshooting purposes, **AppDynamics automatically takes a snapshot** (containing deep diagnostic information) **of specific instances of transactions** that are **having problems**.  AppDynamics uses <a href="https://docs.appdynamics.com/display/latest/Dynamic+Baselines" target="_blank">**the automatic baselines**</a> established **for each business transaction** to identify the transaction instances that should have detailed snapshots collected for them, **allowing for accurate detailed diagnostics during peak production loads**.
+AppDynamics **monitors and records every execution of a business transaction** in the instrumented environment. However, for troubleshooting purposes, **AppDynamics automatically takes a snapshot** (containing deep diagnostic information) **of specific instances of transactions** that are **having problems**.  AppDynamics uses <a href="https://docs.appdynamics.com/latest/en/application-monitoring/business-transactions/business-transaction-performance/dynamic-baselines" target="_blank">**the automatic baselines**</a> established **for each business transaction** to identify the transaction instances that should have detailed snapshots collected for them, **allowing for accurate detailed diagnostics during peak production loads**.
 
 **1 .**  Click on the **Exe Time (ms)** column to sort the snapshots by the highest execution time.
 
@@ -61,13 +61,17 @@ AppDynamics **monitors and records every execution of a business transaction** i
 
 This transaction snapshot opens to the **call graph view of the Node in the LoanServices Tier** that processed this part of the transaction where you can see the following details:
 
+{{% notice tip %}}
+If the snapshot opens to the flow map view first, then click on the "Drill Down" button above the "LoanServices" Tier to get to its call graph view.
+{{% /notice %}}
+
 **1 .**  The method execution sequence shows the names of the classes and methods that participated in processing the business transaction on this node, in the order in which the flow of control proceeded.
 
 **2 .**  For each method, you can see the time and percentage spent processing and the line number in the source code, enabling you to pinpoint the location in the code that could be affecting the performance of the transaction.
 
 **3 .**  The call graph displays exit call links for methods that make outbound calls to other components such as database queries and web service calls.
 
-You can read more about Call Graphs <a href="https://docs.appdynamics.com/display/latest/Call+Graphs" target="_blank">**here**</a>
+You can read more about Call Graphs <a href="https://docs.appdynamics.com/latest/en/application-monitoring/business-transactions/transaction-snapshots/call-graphs" target="_blank">**here**</a>
 
 ![image](/images/mobilize/biz_txns_03.png)
 
@@ -79,9 +83,9 @@ You can read more about Call Graphs <a href="https://docs.appdynamics.com/displa
 
 **2 .**  The detail panel for the JDBC database call **shows the specific query that took most of the time**. 
 
-**2 .**  View the **full contents of the SQL query**, in this case, **a select statement that took almost 7 seconds**. 
+**3 .**  View the **full contents of the SQL query**, in this case, **a select statement that took almost 7 seconds**. 
 
-SQL Parameter Capture is turned off by default, however <a href="https://docs.appdynamics.com/display/latest/Call+Graph+Settings" target="_blank">**it can be turned on if desired**.</a>
+SQL Parameter Capture is turned off by default, however <a href="https://docs.appdynamics.com/latest/en/application-monitoring/configure-instrumentation/call-graph-settings" target="_blank">**it can be turned on if desired**.</a>
 
 ![image](/images/mobilize/biz_txns_04.png)
 
