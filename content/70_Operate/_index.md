@@ -35,7 +35,9 @@ Now let's take a look at **some of the other valuable assets** within the AppDyn
 
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #efc100;"><i class='fas fa-certificate'></i></span>&nbsp; **Cluster Agent**
 
+<!--
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #efc100;"><i class='fas fa-certificate'></i></span>&nbsp; **Cloud Native**
+-->
 
 <br>
 

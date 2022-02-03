@@ -93,8 +93,11 @@ The cluster pods view gives us a list of all of the pods running within the clus
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 
-In the next section we'll look at how **AppDynamics offers enterprise-grade** performance **cloud monitoring and analytics tools** to bolster business results **in your journey to cloud native**.
+We'll **summarize what we've learned** and **start wrapping up the workshop!** 
 
+<!---
+In the next section we'll look at how **AppDynamics offers enterprise-grade** performance **cloud monitoring and analytics tools** to bolster business results **in your journey to cloud native**.
+-->
 
 <!---
 {{% notice warning %}}
