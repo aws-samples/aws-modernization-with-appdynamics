@@ -18,7 +18,9 @@ Use the following steps to find the URL to the web site:
 
 **2 .**  Then select **Preview Running Application** from the drop down
 
-**3 .**  Now click on the button **to the right of the "Browser" button** to open the web page in a new browser tab
+**3 .**  If the web home page doesn't show up then click in the address bar and add **:8080** after **amazonaws.com** at the end of the URL and hit enter
+
+**4 .**  Now click on the button **to the right of the "Browser" button** to open the web page in a new browser tab
 
 ![image](/images/mobilize/find_web_url_01.png)
 
