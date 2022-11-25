@@ -12,7 +12,7 @@ weight = 4
 
 Let's start by finding the pre-modernized version of the AD Financial APM (**App Performance Monitoring**) application and open it to investigate the flow map.
 
-In the **Applications** tile, you should see the application named like **&lt;your_lab_user_name&gt;-AD-Fin-PreMod**
+Click on the **Applications** tab on the top menu, you should see the application named like **&lt;your_lab_user_name&gt;-AD-Fin-PreMod**
 
 Click on the application name to drill into the flow map view for the application.
 
