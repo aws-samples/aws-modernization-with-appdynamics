@@ -65,16 +65,31 @@ You **must use** the **Amazon Linux 2** platform type for this workshop.  If the
 ## Select your options
 
 - Select **Create environment**
-- Name it **AppD-Workshop**, click Next.
-- Choose **t3.large** for instance type, ensure **Amazon Linux 2** is selcted as the platform, choose **After four hours** for cost saving setting, as seen below.
+- Name it **AppD-Workshop**
+- Make sure **New EC2 instance** is selected
 
 
-![c9configure](/images/workshop_setup/c9_configure_01.png)
+![c9configure](/images/workshop_setup/c9_setup_01.png)
 
-- Click **Next Step**, then click **Create environment**
+- Select **Additional instance types**
+- Choose **t3.large** for instance type
+- Ensure **Amazon Linux 2** is selcted as the platform
+- Choose **1 day** timeout for cost saving setting, as seen below.
+
+![c9configure](/images/workshop_setup/c9_setup_02.png)
+
+
+- Select **Secure Shell (SSH)** for the connection
+- Then click on the **Create** button
   
-- When it comes up, customize the environment by closing the **welcome tab**
-and **lower work area**, and opening a new **terminal** tab in the main work area:
+![c9configure](/images/workshop_setup/c9_setup_03.png)
+
+- Now click on the **Open** link to open your Cloud9 UI
+
+![c9configure](/images/workshop_setup/c9_setup_04.png)
+
+- When it comes up, customize the environment by closing the **welcome tab** and **lower work area**, and opening a new **terminal** tab in the main work area:
+
 ![c9before](/images/workshop_setup/c9_before.png)
 
 - Your workspace should now look like this:

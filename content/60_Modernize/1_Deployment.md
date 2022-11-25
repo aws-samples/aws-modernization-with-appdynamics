@@ -33,6 +33,19 @@ cat -n cluster.yaml
 ```
 Notice where we've defined the name of the cluster, the region and availability zones to deploy to, the instance type for the nodes. and the number of nodes. 
 
+
+{{% notice info %}}
+Notice that the **default availability zones defined** in the **cluster.yaml file** are **a** and **c** on line number 9 in the image below.  It is advisable to run the command below to check that both of those availability zones are supported in your region.  You can **use the command below** to check the **supported availability zones in your region**. You can read more information about checking availability zones <a href="https://aws.amazon.com/premiumsupport/knowledge-center/vpc-find-availability-zone-options/" target="_blank">**here**</a>.  You **may need to edit** the **cluster.yaml** file to change the availability zones to the ones supported in your region before your create the EKS cluster.
+{{% /notice %}}
+
+
+Example command to check for supported availability zones if your region is **us-east-2**
+```
+aws ec2 describe-availability-zones --region us-east-2
+```
+
+
+
 ![image](/images/modernize/kube-conf-01.png)
 
 {{% notice warning %}}
