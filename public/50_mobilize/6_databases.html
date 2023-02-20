@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.99.0" />
+    <meta name="description" content="AppDynamics Workshop">
+<meta name="author" content="James Schneider">
+
+    <link rel="icon" href="https://appd-modernization.awsworkshop.io/images/favicon.png" type="image/x-icon" />
+
+    <title>Databases :: English</title>
+
+    
+    <link href="/css/nucleus.css?1676919882" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676919882" rel="stylesheet">
+    <link href="/css/hybrid.css?1676919882" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676919882" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676919882" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676919882" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676919882" rel="stylesheet">
+    <link href="/css/theme.css?1676919882" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676919882" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1676919882" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1676919882"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/50_mobilize/6_databases.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><img style="vertical-align:middle;margin:30px;" src="../../images/AWS-Logo_White-Color.png" height="125px">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1676919882"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676919882"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1676919882"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10_backstory.html" title="Backstory" class="dd-item
+        
+        
+        
+        ">
+      <a href="/10_backstory.html">
+          Backstory
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/20_getting_started.html" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/20_getting_started.html">
+          Getting Started
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/1_aws_event_engine.html" title="AWS Event Engine" class="dd-item ">
+        <a href="/20_getting_started/1_aws_event_engine.html">
+        AWS Event Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/2_aws_account.html" title="AWS Account" class="dd-item ">
+        <a href="/20_getting_started/2_aws_account.html">
+        AWS Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/3_appd_account.html" title="AppDynamics Account" class="dd-item ">
+        <a href="/20_getting_started/3_appd_account.html">
+        AppDynamics Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/4_aws_credits.html" title="AWS Credit Request" class="dd-item ">
+        <a href="/20_getting_started/4_aws_credits.html">
+        AWS Credit Request
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/30_workshop_setup.html" title="Workshop Setup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/30_workshop_setup.html">
+          Workshop Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/1_create_cloud9.html" title="Create Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/1_create_cloud9.html">
+        Create Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/2_create_iam_role.html" title="Create IAM Role for Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/2_create_iam_role.html">
+        Create IAM Role for Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/3_attach_iam_role.html" title="Attach IAM Role to Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/3_attach_iam_role.html">
+        Attach IAM Role to Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/4_cloud9_update.html" title="Update Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/4_cloud9_update.html">
+        Update Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/5_start_engines.html" title="Start Your Engines ! " class="dd-item ">
+        <a href="/30_workshop_setup/5_start_engines.html">
+        Start Your Engines ! 
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/40_appdynamics_advantage.html" title="AppDynamics Advantage" class="dd-item
+        
+        
+        
+        ">
+      <a href="/40_appdynamics_advantage.html">
+          AppDynamics Advantage
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/50_mobilize.html" title="Mobilize" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/50_mobilize.html">
+          Mobilize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/1_review_app.html" title="AD Financial Web UI" class="dd-item ">
+        <a href="/50_mobilize/1_review_app.html">
+        AD Financial Web UI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/2_login_appd.html" title="Login to AppDynamics" class="dd-item ">
+        <a href="/50_mobilize/2_login_appd.html">
+        Login to AppDynamics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/3_browser_rum.html" title="End User Monitoring" class="dd-item ">
+        <a href="/50_mobilize/3_browser_rum.html">
+        End User Monitoring
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/4_flowmaps.html" title="Flow Maps" class="dd-item ">
+        <a href="/50_mobilize/4_flowmaps.html">
+        Flow Maps
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/5_business_txns.html" title="Business Transactions" class="dd-item ">
+        <a href="/50_mobilize/5_business_txns.html">
+        Business Transactions
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/6_databases.html" title="Databases" class="dd-item active">
+        <a href="/50_mobilize/6_databases.html">
+        Databases
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/7_summary.html" title="Summary" class="dd-item ">
+        <a href="/50_mobilize/7_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/60_modernize.html" title="Modernize" class="dd-item
+        
+        
+        
+        ">
+      <a href="/60_modernize.html">
+          Modernize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/60_modernize/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/2_accelerate.html" title="Accelerate" class="dd-item ">
+        <a href="/60_modernize/2_accelerate.html">
+        Accelerate
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/3_scale.html" title="Scale" class="dd-item ">
+        <a href="/60_modernize/3_scale.html">
+        Scale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/4_business_iq.html" title="Business iQ" class="dd-item ">
+        <a href="/60_modernize/4_business_iq.html">
+        Business iQ
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/5_summary.html" title="Summary" class="dd-item ">
+        <a href="/60_modernize/5_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/70_operate.html" title="Operate" class="dd-item
+        
+        
+        
+        ">
+      <a href="/70_operate.html">
+          Operate
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/70_operate/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/2_cognition_engine.html" title="Cognition Engine" class="dd-item ">
+        <a href="/70_operate/2_cognition_engine.html">
+        Cognition Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/3_cluster_agent.html" title="Cluster Agent" class="dd-item ">
+        <a href="/70_operate/3_cluster_agent.html">
+        Cluster Agent
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/80_wrapup.html" title="Wrapup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/80_wrapup.html">
+          Wrapup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/1_workshop_teardown.html" title="Workshop Cleanup" class="dd-item ">
+        <a href="/80_wrapup/1_workshop_teardown.html">
+        Workshop Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/2_cloud9_cleanup.html" title="Cloud9 Cleanup" class="dd-item ">
+        <a href="/80_wrapup/2_cloud9_cleanup.html">
+        Cloud9 Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/3_survey.html" title="Survey" class="dd-item ">
+        <a href="/80_wrapup/3_survey.html">
+        Survey
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"><i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/resources/ebook/how-to-monitor-kubernetes-with-confidence"><i class='fas fa-chalkboard-teacher'></i> Monitor Kubentes with Confidence</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/c/dam/r/appdynamics/general-documents/use-cases/biq-use-case-guide-2020.pdf"><i class='fas fa-chalkboard-teacher'></i> 6 Business iQ Use Cases</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/solutions/cloud/cloud-monitoring/kubernetes-monitoring/how-to-monitor-kubernetes-best-practices"><i class='fas fa-chalkboard-teacher'></i> K8s Monitoring Best Practices</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/blog/product/scaling-kubernetes-observability/"><i class='fas fa-chalkboard-teacher'></i> Scaling Kubernetes with AppD</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Advanced Observability with AppDynamics</a> > <a href='/50_mobilize.html'>Mobilize</a> > Databases
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#in-the-previous-section-the-business-transactions-view-helped-us-easily-isolate-the-5-problematic-business-transactions-for-the-loan-approval-process-we-identified-that-significant-time-was-spent-in-one-of-the-jdbc-calls-to-the-database-let-s-now-take-a-deeper-look-to-isolate-the-specific-database-queries-that-are-degarding-the-perfomance-of-the-loan-application-process">In the previous section, the business transactions view helped us easily isolate the 5 problematic business transactions for the loan approval process.  We identified that significant time was spent in one of the JDBC calls to the database.  Let&rsquo;s now take a deeper look to isolate the specific database queries that are degarding the perfomance of the loan application process.</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#db-visibility-from-apm-agents">DB Visibility from APM Agents</a></li>
+<li><a href="#navigate-to-the-pre-modernized-database">Navigate to the Pre-Modernized Database</a></li>
+<li><a href="#database-overview">Database Overview</a></li>
+<li><a href="#activity-reports">Activity Reports</a></li>
+<li><a href="#queries-summary-dashboard">Queries Summary Dashboard</a></li>
+<li><a href="#query-detail-view">Query Detail View</a></li>
+<li><a href="#troublshoot-the-expensive-audit-query">Troublshoot the Expensive Audit Query</a></li>
+<li><a href="#here-s-the-advantage">Here&rsquo;s the Advantage</a></li>
+<li><a href="#takeaways">Takeaways</a></li>
+<li><a href="#next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Databases
+            </h1>
+          
+
+        
+
+
+
+
+<p><img src="/images/mobilize/ad_team_architect.png" alt="image" /></p>
+
+<h4 id="in-the-previous-section-the-business-transactions-view-helped-us-easily-isolate-the-5-problematic-business-transactions-for-the-loan-approval-process-we-identified-that-significant-time-was-spent-in-one-of-the-jdbc-calls-to-the-database-let-s-now-take-a-deeper-look-to-isolate-the-specific-database-queries-that-are-degarding-the-perfomance-of-the-loan-application-process">In the previous section, the business transactions view helped us easily isolate the 5 problematic business transactions for the loan approval process.  We identified that significant time was spent in one of the JDBC calls to the database.  Let&rsquo;s now take a deeper look to isolate the specific database queries that are degarding the perfomance of the loan application process.</h4>
+
+<h2 id="db-visibility-from-apm-agents">DB Visibility from APM Agents</h2>
+
+<p>With AppDynamics APM agents, not only did we see database calls on the Flow Maps and in the Transaction Snapshots, but we also get a summary of the calls the application made to each database containing valuable KPIs.</p>
+
+<p><strong>1 .</strong>  Click on the <strong>Database Calls</strong> option on the left menu.</p>
+
+<p><strong>2 .</strong>  Notice the database that had the fewest calls yet had the highest average response times.</p>
+
+<p>If we drilled in and looked at the snapshots for those database calls, we would see they were select queries related to audit data reporting.  Let&rsquo;s use the AppDynamics Database Agent to confirm these queries are consuming the most database resources.</p>
+
+<p><img src="/images/mobilize/database_00.png" alt="image" /></p>
+
+<p>Database Visibility in AppDynamics provides end-to-end visibility on the performance of your database, helps you troubleshoot problems such as slow response times and excessive load, and provides metrics on database activities, such as:</p>
+
+<ul>
+<li>SQL statements or stored procedures that are consuming most of the system resources</li>
+<li>Statistics on procedures, SQL statements, and SQL query plans</li>
+<li>Time spent on fetching, sorting, or waiting on a lock</li>
+<li>Activity from the previous day, week, or month</li>
+</ul>
+
+<h2 id="navigate-to-the-pre-modernized-database">Navigate to the Pre-Modernized Database</h2>
+
+<p>Let&rsquo;s start by finding the pre-modernized MySQL Database and open it to investigate the details.</p>
+
+<p><strong>1 .</strong>  Click on the <strong>Databases</strong> option on the top menu.</p>
+
+<ul>
+<li>In the list of datbases, you should see the database named like <strong>&lt;your_lab_user_name&gt;-AD-Fin-PreMod</strong></li>
+</ul>
+
+<p><strong>2 .</strong>  Double-click on the database name to drill into main dashboard for the database.</p>
+
+<p><img src="/images/mobilize/database_01.png" alt="image" /></p>
+
+<h2 id="database-overview">Database Overview</h2>
+
+<p>The native MySQL database used in the pre-modern version of the application is straining to keep up with the demand of the application load.  Let&rsquo;s take a look at the details of how the MySQL database is performing.</p>
+
+<p><strong>1 .</strong>  Click on the colored health status circle to see details of the server health</p>
+
+<p><strong>2 .</strong>  Observe the total time spent executing SQL statements during the specified time period</p>
+
+<p><strong>2 .</strong>  Observe the total number of executions during the specified time period</p>
+
+<p><strong>4 .</strong>  Hover over the time series on the chart to see the detail of the recorded metrics</p>
+
+<p><strong>5 .</strong>  Hover over the labels for each wait state to see a more detailed description</p>
+
+<p>You can read more about the Database Overview dashboard <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-dashboard" target="_blank"><strong>here</strong></a></p>
+
+<p><img src="/images/mobilize/database_02.png" alt="image" /></p>
+
+<h2 id="activity-reports">Activity Reports</h2>
+
+<p>There are up to nine different reports available in Database Visibility on the Database Activity Window. The reports available depend on the database platform being monitored. Let&rsquo;s investigate the Wait State Report to see which wait states are consuming the most time.</p>
+
+<p>This report displays time-series data on Wait Events (states) within the database. Each distinct wait is color-coded, and the Y-axis displays time in seconds. This report also displays data in a table and highlights the time spent in each wait state.</p>
+
+<p>The wait states consuming the most time may point to performance bottlenecks. For example, db file sequential reads may be caused by segment header contention on indexes or by disk contention.</p>
+
+<p>You can read more about the Database Activity Reports <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-activity-window" target="_blank"><strong>here</strong></a></p>
+
+<p><img src="/images/mobilize/database_03.png" alt="image" /></p>
+
+<h2 id="queries-summary-dashboard">Queries Summary Dashboard</h2>
+
+<p>The Queries window displays the SQL statements and stored procedures that consume the most time in the database. You can compare the query weights to other metrics such as SQL wait times to determine SQL that requires tuning.  From this view we can see <strong>in this example, the select query related to audit data reporting has a 50% database resource usage rating</strong> compared to all the other queries being executed.</p>
+
+<p><strong>1 .</strong>  Click on the &ldquo;Queries&rdquo; tab to view the queries window</p>
+
+<p><strong>2 .</strong>  Click on the &ldquo;Top Queries&rdquo; dropdown to display the top 5, 10, 100 or 200 queries</p>
+
+<p><strong>3 .</strong>  Click &ldquo;Filter by Wait States&rdquo; button to choose wait states to filter the Query list by</p>
+
+<p><strong>4 .</strong>  Click on the query that shows the largest &ldquo;Weight (%)&rdquo; used</p>
+
+<p><strong>5 .</strong>  Click on the &ldquo;View Query Details&rdquo; button to drill into the query details</p>
+
+<p>You can read more about the Database Queries dashboard <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window" target="_blank"><strong>here</strong></a></p>
+
+<p><img src="/images/mobilize/database_04.png" alt="image" /></p>
+
+<h2 id="query-detail-view">Query Detail View</h2>
+
+<p>Once you have identified the statements on the Database Queries window that are spending the most amount of time in the database, you can dig down deeper for details that can help you tune those SQL statements. The database instance Query Details window displays details about the query selected on the Database Queries window.</p>
+
+<p><strong>1 .</strong>  Resource consumption over time shows the amount of time the query spent in the database using resources, the number of executions, and the amount of CPU time consumed.</p>
+
+<p><strong>2 .</strong>  Wait states are the activities that contribute to the time it takes the database to service the selected SQL statement. The wait states consuming the most time may point to performance bottlenecks.</p>
+
+<p><strong>3 .</strong>  Click on the <strong>Execution Plan</strong> option to see the query execution plan window.</p>
+
+<p>You can read more about the Database Query Details dashboard <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window/database-query-details-window" target="_blank"><strong>here</strong></a></p>
+
+<p><img src="/images/mobilize/database_05.png" alt="image" /></p>
+
+<h2 id="troublshoot-the-expensive-audit-query">Troublshoot the Expensive Audit Query</h2>
+
+<p>The Database Query Execution Plan window can help you to determine the most efficient execution plan for your queries. Once you&rsquo;ve discovered a potentially problematic query, you can run the EXPLAIN PLAN statement to check the execution plan that the database created. A query&rsquo;s execution plan reveals whether the query is optimizing its use of indexes and executing efficiently. This information is useful for troubleshooting queries that are executing slowly.</p>
+
+<p><strong>1 .</strong>  Notice that the join type in the &ldquo;Type&rdquo; column is ALL for each table.</p>
+
+<p><strong>2 .</strong>  Hover over one of the join types to see the description for the join type.
+- The description points to the use of full table scans across the two tables in the query</p>
+
+<p><strong>3 .</strong>  Examine the entries in the &ldquo;Extra&rdquo; column.</p>
+
+<p><strong>4 .</strong>  Hover over each of the entries to see the description for the entry.</p>
+
+<p><strong>5 .</strong>  Click on the <strong>Explain</strong> button if you&rsquo;re not seeing the explain plan.</p>
+
+<p>You can read more about the Database Query Execution Plan view <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window/database-query-execution-plan-window" target="_blank"><strong>here</strong></a></p>
+
+<p><img src="/images/mobilize/database_06.png" alt="image" /></p>
+
+<h2 id="here-s-the-advantage">Here&rsquo;s the Advantage</h2>
+
+<ul>
+<li><strong>Easily troubleshoot database problems</strong> such as <strong>slow response times and excessive load</strong></li>
+<li>Get immediate <strong>insight into SQL statements or stored procedures</strong> that are <strong>consuming most of the DB resources</strong></li>
+<li>Easily <strong>confirm time spent</strong> on <strong>fetching, sorting, or waiting on a lock</strong></li>
+</ul>
+
+
+<div class="notices info" ><p>All the dashboards seen in this section are provided OOTB and the content they contain is real-time, dynamic, and reflects the data gathered from the AppDynamics Database Monitoring Agent.</p>
+</div>
+
+
+<h2 id="takeaways">Takeaways</h2>
+
+<ul>
+<li>We <strong>quickly identified</strong> the <strong>problematic query associated with audit reporting</strong></li>
+<li>We confirmed that <strong>audit data reporting queries</strong> are <strong>consuming most of the DB resources</strong></li>
+<li>We <strong>validated</strong> the <strong>need to separate</strong> the <strong>audit data from transactional loan approval data</strong></li>
+</ul>
+
+<h2 id="next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></h2>
+
+<p>Let&rsquo;s <strong>review</strong> what we&rsquo;ve learned about <strong>how AppDynamics can accelerate</strong> your efforts during <strong>the Mobilize phase</strong>.</p>
+
+<!---
+
+<div class="notices warning" ><p>The Cloud9 workspace should be built by an IAM user with Administrator privileges,
+not the root account user. Please ensure you are logged in as an IAM user, not the root
+account user.</p>
+</div>
+
+-->
+
+<!---
+
+<div class="notices info" ><p>This workshop was designed to run in the <strong>Oregon (us-west-2)</strong> region. <strong>Please don&rsquo;t
+run in any other region.</strong> Future versions of this workshop will expand region availability,
+and this message will be removed.</p>
+</div>
+
+-->
+
+<!---
+
+<div class="notices tip" ><p>Ad blockers, javascript disablers, and tracking blockers should be disabled for
+the cloud9 domain, or connecting to the workspace might be impacted.
+Cloud9 requires third-party-cookies. You can whitelist the <a href="https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading" target="_blank">specific domains</a>.</p>
+</div>
+
+-->
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/50_mobilize/5_business_txns.html" title="Business Transactions"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/50_mobilize/7_summary.html" title="Summary" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676919882"></script>
+    <script src="/js/jquery.sticky.js?1676919882"></script>
+    <script src="/js/featherlight.min.js?1676919882"></script>
+    <script src="/js/highlight.pack.js?1676919882"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676919882"></script>
+    <script src="/js/learn.js?1676919882"></script>
+    <script src="/js/hugo-learn.js?1676919882"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1676919882"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

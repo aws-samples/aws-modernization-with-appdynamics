@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.99.0" />
+    <meta name="description" content="AppDynamics Workshop">
+<meta name="author" content="James Schneider">
+
+    <link rel="icon" href="https://appd-modernization.awsworkshop.io/images/favicon.png" type="image/x-icon" />
+
+    <title>Mobilize :: English</title>
+
+    
+    <link href="/css/nucleus.css?1676919882" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676919882" rel="stylesheet">
+    <link href="/css/hybrid.css?1676919882" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676919882" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676919882" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676919882" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676919882" rel="stylesheet">
+    <link href="/css/theme.css?1676919882" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676919882" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1676919882" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1676919882"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/50_mobilize.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><img style="vertical-align:middle;margin:30px;" src="../../images/AWS-Logo_White-Color.png" height="125px">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1676919882"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676919882"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1676919882"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10_backstory.html" title="Backstory" class="dd-item
+        
+        
+        
+        ">
+      <a href="/10_backstory.html">
+          Backstory
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/20_getting_started.html" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/20_getting_started.html">
+          Getting Started
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/1_aws_event_engine.html" title="AWS Event Engine" class="dd-item ">
+        <a href="/20_getting_started/1_aws_event_engine.html">
+        AWS Event Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/2_aws_account.html" title="AWS Account" class="dd-item ">
+        <a href="/20_getting_started/2_aws_account.html">
+        AWS Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/3_appd_account.html" title="AppDynamics Account" class="dd-item ">
+        <a href="/20_getting_started/3_appd_account.html">
+        AppDynamics Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/4_aws_credits.html" title="AWS Credit Request" class="dd-item ">
+        <a href="/20_getting_started/4_aws_credits.html">
+        AWS Credit Request
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/30_workshop_setup.html" title="Workshop Setup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/30_workshop_setup.html">
+          Workshop Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/1_create_cloud9.html" title="Create Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/1_create_cloud9.html">
+        Create Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/2_create_iam_role.html" title="Create IAM Role for Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/2_create_iam_role.html">
+        Create IAM Role for Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/3_attach_iam_role.html" title="Attach IAM Role to Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/3_attach_iam_role.html">
+        Attach IAM Role to Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/4_cloud9_update.html" title="Update Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/4_cloud9_update.html">
+        Update Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/5_start_engines.html" title="Start Your Engines ! " class="dd-item ">
+        <a href="/30_workshop_setup/5_start_engines.html">
+        Start Your Engines ! 
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/40_appdynamics_advantage.html" title="AppDynamics Advantage" class="dd-item
+        
+        
+        
+        ">
+      <a href="/40_appdynamics_advantage.html">
+          AppDynamics Advantage
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/50_mobilize.html" title="Mobilize" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/50_mobilize.html">
+          Mobilize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/1_review_app.html" title="AD Financial Web UI" class="dd-item ">
+        <a href="/50_mobilize/1_review_app.html">
+        AD Financial Web UI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/2_login_appd.html" title="Login to AppDynamics" class="dd-item ">
+        <a href="/50_mobilize/2_login_appd.html">
+        Login to AppDynamics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/3_browser_rum.html" title="End User Monitoring" class="dd-item ">
+        <a href="/50_mobilize/3_browser_rum.html">
+        End User Monitoring
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/4_flowmaps.html" title="Flow Maps" class="dd-item ">
+        <a href="/50_mobilize/4_flowmaps.html">
+        Flow Maps
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/5_business_txns.html" title="Business Transactions" class="dd-item ">
+        <a href="/50_mobilize/5_business_txns.html">
+        Business Transactions
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/6_databases.html" title="Databases" class="dd-item ">
+        <a href="/50_mobilize/6_databases.html">
+        Databases
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/7_summary.html" title="Summary" class="dd-item ">
+        <a href="/50_mobilize/7_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/60_modernize.html" title="Modernize" class="dd-item
+        
+        
+        
+        ">
+      <a href="/60_modernize.html">
+          Modernize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/60_modernize/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/2_accelerate.html" title="Accelerate" class="dd-item ">
+        <a href="/60_modernize/2_accelerate.html">
+        Accelerate
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/3_scale.html" title="Scale" class="dd-item ">
+        <a href="/60_modernize/3_scale.html">
+        Scale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/4_business_iq.html" title="Business iQ" class="dd-item ">
+        <a href="/60_modernize/4_business_iq.html">
+        Business iQ
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/5_summary.html" title="Summary" class="dd-item ">
+        <a href="/60_modernize/5_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/70_operate.html" title="Operate" class="dd-item
+        
+        
+        
+        ">
+      <a href="/70_operate.html">
+          Operate
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/70_operate/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/2_cognition_engine.html" title="Cognition Engine" class="dd-item ">
+        <a href="/70_operate/2_cognition_engine.html">
+        Cognition Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/3_cluster_agent.html" title="Cluster Agent" class="dd-item ">
+        <a href="/70_operate/3_cluster_agent.html">
+        Cluster Agent
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/80_wrapup.html" title="Wrapup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/80_wrapup.html">
+          Wrapup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/1_workshop_teardown.html" title="Workshop Cleanup" class="dd-item ">
+        <a href="/80_wrapup/1_workshop_teardown.html">
+        Workshop Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/2_cloud9_cleanup.html" title="Cloud9 Cleanup" class="dd-item ">
+        <a href="/80_wrapup/2_cloud9_cleanup.html">
+        Cloud9 Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/3_survey.html" title="Survey" class="dd-item ">
+        <a href="/80_wrapup/3_survey.html">
+        Survey
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"><i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/resources/ebook/how-to-monitor-kubernetes-with-confidence"><i class='fas fa-chalkboard-teacher'></i> Monitor Kubentes with Confidence</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/c/dam/r/appdynamics/general-documents/use-cases/biq-use-case-guide-2020.pdf"><i class='fas fa-chalkboard-teacher'></i> 6 Business iQ Use Cases</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/solutions/cloud/cloud-monitoring/kubernetes-monitoring/how-to-monitor-kubernetes-best-practices"><i class='fas fa-chalkboard-teacher'></i> K8s Monitoring Best Practices</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/blog/product/scaling-kubernetes-observability/"><i class='fas fa-chalkboard-teacher'></i> Scaling Kubernetes with AppD</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Advanced Observability with AppDynamics</a> > Mobilize
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#nathan-is-the-lead-architect-for-the-modernization-project-at-ad-financial-nbsp-nathan-was-instrumental-during-the-initial-migration-of-the-first-set-of-applications-from-the-data-center-to-aws-nbsp-nathan-understands-the-complexities-and-risks-of-moving-and-modernizing-large-production-workloads-and-relies-on-the-strategies-practices-and-tools-that-have-proven-their-value-leading-to-success">Nathan is the Lead Architect for the modernization project at AD Financial. &nbsp; Nathan was instrumental during the initial migration of the first set of applications from the data center to AWS. &nbsp; Nathan understands the complexities and risks of moving and modernizing large production workloads and relies on the strategies, practices, and tools that have proven their value, leading to success.</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#frontend-architecture">Frontend Architecture</a></li>
+<li><a href="#backend-architecture">Backend Architecture</a></li>
+<li><a href="#agent-configuration">Agent Configuration</a></li>
+<li><a href="#java-apm-agent">Java APM Agent</a></li>
+<li><a href="#server-visibility-agent">Server Visibility Agent</a></li>
+<li><a href="#database-visibility-agent">Database Visibility Agent</a></li>
+<li><a href="#browser-javascript-agent">Browser JavaScript Agent</a></li>
+<li><a href="#next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Mobilize
+            </h1>
+          
+
+        
+
+
+
+	
+
+<h4 id="nathan-is-the-lead-architect-for-the-modernization-project-at-ad-financial-nbsp-nathan-was-instrumental-during-the-initial-migration-of-the-first-set-of-applications-from-the-data-center-to-aws-nbsp-nathan-understands-the-complexities-and-risks-of-moving-and-modernizing-large-production-workloads-and-relies-on-the-strategies-practices-and-tools-that-have-proven-their-value-leading-to-success">Nathan is the Lead Architect for the modernization project at AD Financial. &nbsp; Nathan was instrumental during the initial migration of the first set of applications from the data center to AWS. &nbsp; Nathan understands the complexities and risks of moving and modernizing large production workloads and relies on the strategies, practices, and tools that have proven their value, leading to success.</h4>
+
+<p><img src="/images/mobilize/ad_team_architect.png" alt="image" /></p>
+
+
+<div class="notices info" ><p>The Mobilize, Modernize, and Operate sections of the workshop build upon the workshop setup by walking the user through the AppDynamics UI Dashboards.</p>
+</div>
+
+
+<p>In the past, <strong>IT teams had to create architecture diagrams for each application</strong> across their enterprise landscape.  These <strong>quickly became obsolete and out-of-date</strong> as teams struggled to keep pace <strong>with the continual changes being made to the frontends and backends</strong> of their applications.</p>
+
+<p>With AppDynamics, there&rsquo;s <strong>no need to keep manually creating and updating architecture diagrams</strong> for your application. <strong>AppDynamics provides you with end-to-end OOTB dynamic visual representations</strong> for all the <strong>web pages, mobile views, components, services, hosts, backends, and depencies of your monitored application</strong>, all in direct context of the time frame you select.</p>
+
+<p><br></p>
+
+<p>When AD Financial first migrated its customer facing web application to AWS, Nathan had the AppDynamics advantage that assisted him and his team throughout the entire migration process.</p>
+
+<p><strong>Utilizing AppDynamics, Nathan and team can efficiently and effectively:</strong>
+- perform detailed application discovery
+- perform detailed application dependency analysis
+- priortize services to refactor
+- gather application baselines
+- create a viable modernization plan</p>
+
+<h2 id="frontend-architecture">Frontend Architecture</h2>
+
+<p>AppDynamics <strong>End User Monitoring (EUM)</strong> gives you deep <strong>visibility on the performance of your web and mobile applications</strong>. EUM helps you troubleshoot problems such as slow web, Ajax, mobile network requests, or IoT application errors. EUM provides metrics on application performance and user activity, such as:</p>
+
+<ul>
+<li>How server performance impacts your web, mobile, and device performance</li>
+<li>How third-party APIs impact your web, mobile, and device performance</li>
+<li>Where your heaviest loads originate</li>
+<li>How your users connect to and navigate your application</li>
+</ul>
+
+<p>The <strong>AppDynamics Experience Journey Map</strong> provides a dynamic up-to-date view of your application frontend and maps out the pages, views, and actions and the path end users navigate through the frontend.</p>
+
+<p><img src="/images/mobilize/brum_app_00.png" alt="image" /></p>
+
+<h2 id="backend-architecture">Backend Architecture</h2>
+
+<p>The <strong>AppDynamics Flow Map</strong> goes far beyond a basic architecture diagram.</p>
+
+<p>It provides you <strong>much more than just &ldquo;an inventory list&rdquo;</strong>, such as:</p>
+
+<ul>
+<li><strong>The response time</strong>:
+
+<ul>
+<li>for the whole application</li>
+<li>for each service</li>
+<li>between each service</li>
+<li>to each dependency</li>
+</ul></li>
+<li><strong>The calls per minute</strong>:
+
+<ul>
+<li>for the whole application</li>
+<li>for each service</li>
+<li>between each service</li>
+<li>to each dependency</li>
+</ul></li>
+<li><strong>The errors per minute</strong>:
+
+<ul>
+<li>for the whole application</li>
+<li>for each service</li>
+<li>between each service</li>
+<li>to each dependency</li>
+</ul></li>
+</ul>
+
+<p><img src="/images/mobilize/01_flowmap.png" alt="image" /></p>
+
+<p><br></p>
+
+<h2 id="agent-configuration">Agent Configuration</h2>
+
+<p>Now let&rsquo;s look at the different AppDynamics agents that have been applied to the pre-modernized application and review how they were deployed and configured.  For some of the agents, we have used pre-packaged Docker images and for others, we have downloaded the agent binaries.  You can read more about the different agent download options <a href="https://docs.appdynamics.com/latest/en/appdynamics-essentials/getting-started/download-appdynamics-software" target="_blank"><strong>here</strong></a>.</p>
+
+<p>Most types of AppDynamics agents require the five connection properties seen below.  The setup script you executed previously in the workshop setup section, auto-populated the agent to controller configuration properties for you.</p>
+
+<p><br></p>
+
+<p><strong>1.</strong> APPDYNAMICS_CONTROLLER_HOST_NAME</p>
+
+<p><strong>2.</strong> APPDYNAMICS_CONTROLLER_PORT</p>
+
+<p><strong>3.</strong> APPDYNAMICS_CONTROLLER_SSL_ENABLED</p>
+
+<p><strong>4.</strong> APPDYNAMICS_AGENT_ACCOUNT_NAME</p>
+
+<p><strong>5.</strong> APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY</p>
+
+<p><br></p>
+
+<p><strong>Our pre-modernized application</strong> is made up of <strong>micro-services in Docker containers</strong> and <strong>deployed with Docker Compose</strong>.  To maintain modularity and <strong>reduce coupling of the application services to the agents</strong>, we&rsquo;ve packaged the <strong>Java APM Agent and the Server Visibility Agent in separate Docker images</strong>.</p>
+
+<p>Let&rsquo;s take a <strong>look at the <em>&ldquo;application.env&rdquo;</em> file for the Docker application</strong> that has the agent to controller connection properties defined by using the commands below:</p>
+<pre tabindex="0"><code>cd /opt/appdynamics/workshopuser/pre-mod-docker
+
+cat -n application.env</code></pre>
+<p>You should see the five controller connection properties and their values defined.  You can read more about the Agent to Controller Connection properties <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/agent-to-controller-connections" target="_blank"><strong>here</strong></a></p>
+
+<p><br></p>
+
+<h2 id="java-apm-agent">Java APM Agent</h2>
+
+<p>In the <em>&ldquo;application.env&rdquo;</em> file you&rsquo;ll see the <em>&ldquo;APPDYNAMICS_AGENT_APPLICATION_NAME&rdquo;</em> property.  This property is used by the Java Agent to know what APM application name to report to within the Controller.</p>
+
+<p>Let&rsquo;s take a <strong>look at the &ldquo;docker-compose.yaml&rdquo; file</strong> that is used to define the containers/services that comprise the application.</p>
+<pre tabindex="0"><code>cd /opt/appdynamics/workshopuser/pre-mod-docker
+
+cat -n docker-compose.yaml</code></pre>
+<p>In the section of the file seen below, we are defining the Java Agent as a service and referencing a pre-built Docker image of the Java Agent.</p>
+
+<p><strong>Where do we</strong> reference the Docker image of the Java Agent <strong>?</strong>
+ - on <strong>line 8</strong> we are providing the reference to the pre-built public image that can be found <a href="https://hub.docker.com/r/appdynamics/java-agent/tags?page=1&ordering=last_updated" target="_blank"><strong>here</strong></a></p>
+
+<p><strong>How do we</strong> expose the directory on the image where the Java Agent binaries can be accessed by the other service containers that reference it <strong>?</strong>
+ - on <strong>line 10</strong> we are specifying the file system location of the binaries</p>
+
+<p><img src="/images/mobilize/agent-conf-01.png" alt="image" /></p>
+
+<p>Scroll down the file until you get to <strong>line 56</strong>.  Here we see the entire <strong>definition for the *&ldquo;loan-services&rdquo;</strong>* container/service.</p>
+
+<p><strong>Notice</strong> that the loan services has its own image defined containing just the application code (e.g. <strong>line 57</strong>).</p>
+
+<p><strong>How do we</strong> then load the binaries for the Java Agent into the application container <strong>?</strong>
+ - on <strong>line 62</strong>, under the volumes section, we are pulling in the shared volume/directory from the java-agent container</p>
+
+<p><strong>How does the</strong> Java Agent obtain its connection properties to the controller <strong>?</strong>
+ - on <strong>line 63</strong>, we&rsquo;re pulling in the &ldquo;application.env&rdquo; file that contains those as well as the APM application name</p>
+
+<p><strong>How does the</strong> Java Agent get bootstrapped into the application JVM startup <strong>?</strong>
+ - on <strong>line 67</strong>, we&rsquo;re telling Docker to add the Java Agent bootstrap parameter to the JVM startup</p>
+
+<p><strong>How does the</strong> <em>loan-services</em> container/service get its Tier and Node name assigned <strong>?</strong>
+ - on <strong>line 69 and 70</strong>, we are defining the Tier name and Node name</p>
+
+<p><img src="/images/mobilize/agent-conf-02.png" alt="image" /></p>
+
+<p>You can examine the other services in the <em>docker-compose.yaml</em> file to see the specific definitions that include the Java Agent in the exact manner as described above, with the exception of Tier and Node name differences.</p>
+
+<p>You can read more about building the Java Agent into your own Docker Image <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#InstalltheJavaAgentinContainers-dockerfile" target="_blank"><strong>here</strong></a></p>
+
+<p><br></p>
+
+<h2 id="server-visibility-agent">Server Visibility Agent</h2>
+
+<p>The Server Visibility Agent used with a Docker Compose application <strong>differs</strong> from the Java Agent in that:</p>
+
+<ul>
+<li>only one instance of the Server Visibility Agent should be deployed on a given host/VM</li>
+<li>it runs in its own container within its own JVM on a single host/VM</li>
+<li>the Server Visibility Agent does not require the definition of an application, tier, or node name, since it scans the process list/containers on the host/VM to find AppDynamics APM agents in use and relates itself to those processes/containers</li>
+</ul>
+
+<p>The Server Visibility Agent used with a Docker Compose application <strong>is similar to</strong> the Java Agent in that:
+- it should be defined as a service within the same docker-compose.yaml file
+- it will use the same controller connection properties defined in the <em>application.env</em> file
+- we are using a pre-built Docker image of the agent for this workshop
+- you have the option of building your own Docker image of the agent in your own repository</p>
+
+<p>If needed, run the commands below to view the docker-compose.yaml file again:</p>
+<pre tabindex="0"><code>cd /opt/appdynamics/workshopuser/pre-mod-docker
+
+cat -n docker-compose.yaml</code></pre>
+<p>Scroll down the file until you get to <strong>line 12</strong>.  Here we see the entire <strong>definition for the *&ldquo;machine-agent&rdquo;</strong>* AKA the Server Visibility Agent.</p>
+
+<p>We are defining the Server Visibility Agent as a service and referencing a pre-built Docker image for it on <strong>line 14</strong> that can be found <a href="https://hub.docker.com/r/appdynamics/machine-agent-analytics/tags?page=1&ordering=last_updated" target="_blank"><strong>here</strong></a></p>
+
+<p><strong>How does the</strong> Server Visibility Agent obtain its connection properties to the controller <strong>?</strong>
+ - on <strong>line 16</strong>, we&rsquo;re pulling in the &ldquo;application.env&rdquo; file that contains those properties</p>
+
+<p><strong>What additional</strong> properties are needed for the agent <strong>?</strong>
+- the property on <strong>line 18</strong> is required if you want to collect more than minimal host level metrics
+- it is highly recommended to replicate <strong>lines 19 and 20</strong> as well if using an older agent version</p>
+
+<p><img src="/images/mobilize/agent-conf-03.png" alt="image" /></p>
+
+<p>You can read more about building the Server Visibility Agent into your own Docker Container Image <a href="https://github.com/Appdynamics/appdynamics-docker-images/tree/master/appd-machine-agent-analytics" target="_blank"><strong>here</strong></a></p>
+
+<p><br></p>
+
+<h2 id="database-visibility-agent">Database Visibility Agent</h2>
+
+<p>The AppDynamics Database Agent is a standalone Java program that collects performance metrics about your database instances and database servers. You can deploy the Database Agent on any machine running Java 1.8 or higher. The machine must have network access to the AppDynamics Controller and the database instance that you want to be monitored.</p>
+
+<p>A single database agent can monitor multiple databases at once by using multiple database collector configurations.  The workshop setup utility installed the agent on your Cloud9 instance and also created two database collector configurations inside the controller.  You can see the running agent process by using the command below:</p>
+<pre tabindex="0"><code>ps -ef | grep db-agent</code></pre>
+<p>In the case of the database agent, JVM command line properties were used to connect the agent to the controller.  Take notice of the &ldquo;-Ddbagent.name&rdquo; property.  This property is used to link a specific database agent to a database collector configuration.  Most of these properties could have optionally been defined in the agents configuration file, which can be seen by using the commands below:</p>
+<pre tabindex="0"><code>cd /opt/appdynamics/dbagent/conf
+
+cat controller-info.xml</code></pre>
+<p>The image below shows an example of the database collector configuration to monitor the MySQL database used in the pre-modernized Docker Compose application.</p>
+
+<p>Once the database agent is running with a specific name, its name should appear in the drop-down of available agents so you can associate it with the collector you&rsquo;re creating.  Since the database agent is running on the same host as our Docker Compose application and the MySQL DB running within it, we have used &ldquo;localhost&rdquo; as the hostname.  We can use the port &ldquo;3306&rdquo; for the DB since we have exposed it specifically in the &ldquo;docker-compose.yaml&rdquo; file.</p>
+
+<p>You can see that we have used the &ldquo;root&rdquo; username and password to connect to the database and monitor it.  The recommended practice is to create a specific database user in the database and apply specific permissions to it for monitoring purposes.</p>
+
+<p>You can read more about deploying the database agent and configuring collectors <a href="https://docs.appdynamics.com/latest/en/database-visibility/administer-the-database-agent" target="_blank"><strong>here</strong></a> and <a href="https://docs.appdynamics.com/latest/en/database-visibility/add-database-collectors" target="_blank"><strong>here</strong></a></p>
+
+<p><img src="/images/mobilize/agent-conf-07.png" alt="image" /></p>
+
+<p><br></p>
+
+<h2 id="browser-javascript-agent">Browser JavaScript Agent</h2>
+
+<p>The Browser Agent consists of two JavaScript files, collectively referred to as the JavaScript Agent.  We are simulating browser load for the pre-modernized Docker Compose application but have not yet applied the JavaScript Agent to some of the web pages.</p>
+
+<p>To instrument your application for Browser RUM, you must configure your JavaScript Agent and insert it into the page that is returned to the end user as part of the normal process it follows. The act of inserting the agent is called injection. There are several ways to inject the JavaScript Agent for Browser RUM into your web pages. You also have several JavaScript hosting options to choose from that offer differing degrees of control, simplicity, and reliability.</p>
+
+<p>You can try out the Automatic Injection option to inject the JavaScript Agent into the some of the web pages by following the steps below:</p>
+
+<p><strong>1.</strong> Login to the AppDynamics Controller as described in the <a href="https://appd-modernization.awsworkshop.io/50_mobilize/2_login_appd.html" target="_blank"><strong>Login to AppDynamics</strong></a> section.</p>
+
+<p><strong>2.</strong> Navigate to the Flow Map of the pre-modernized APM Application as described in the <a href="https://appd-modernization.awsworkshop.io/50_mobilize/4_flowmaps.html" target="_blank"><strong>Flow Maps</strong></a> section.</p>
+
+<p><strong>3.</strong> From the bottom of the far left menu navigate to:
+ - Configuration &gt; User Experience App Integration &gt; JavaScript Agent Injection</p>
+
+<p><strong>4.</strong> Toggle the Enable button so it is on</p>
+
+<p><strong>5.</strong> Select the browser application named like <strong>&lt;your_lab_user_name&gt;-AD-Fin-PreMod-Web</strong></p>
+
+<p><strong>6.</strong> Check the Enable checkbox for Automatic JavaScript Injection</p>
+
+<p><strong>7.</strong> Click the Save button to save your changes</p>
+
+<p><img src="/images/mobilize/agent-conf-04.png" alt="image" /></p>
+
+<p><strong>8.</strong> Now click through the web pages of the application as described in the <a href="https://appd-modernization.awsworkshop.io/50_mobilize/1_review_app.html" target="_blank"><strong>AD Financial Web UI</strong></a> section.<br />
+ - You&rsquo;ll need to click through each page about three or four times before the URL&rsquo;s for the pages show up in the right hand list box.</p>
+
+<p><strong>9.</strong> Click on the Refresh List link until you see the four URL&rsquo;s for the web pages appear in the list box on the right.
+ - It could take several minutes for the URL&rsquo;s to show up</p>
+
+<p><strong>10.</strong> Select the four URL&rsquo;s for the web pages as seen in the list box on the right</p>
+
+<p><strong>11.</strong> Then click the left arrow button to move them into the list box on the right</p>
+
+<p><strong>12.</strong> Now click on the Save button to save your changes</p>
+
+<p><img src="/images/mobilize/agent-conf-05.png" alt="image" /></p>
+
+<p>You can use your browser developer tools to validate that the JavaScript Agent is loading for the web page.  You should see the two JavaScript files (adrum.js and adrum-ext.js) being loaded with the page.</p>
+
+<p><img src="/images/mobilize/agent-conf-06.png" alt="image" /></p>
+
+<p>You can read more about configuring the JavaScript Agent and the different injection methods <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/configure-the-javascript-agent" target="_blank"><strong>here</strong></a> and <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/inject-the-javascript-agent" target="_blank"><strong>here</strong></a>.</p>
+
+<!--
+
+
+<div class="notices info" ><p><strong>Optional:</strong>  You can explore the artifacts that were utilized to deploy the application and AppDynamics agents associated with this section by navigating to the following directories listed below that are located on your Cloud9 instance:</p>
+</div>
+
+
+```
+/home/ec2-user/environment/deployment
+
+/home/ec2-user/environment/deployment/pre-mod-docker
+```
+-->
+
+<p><br></p>
+
+<h2 id="next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></h2>
+
+<p>Let&rsquo;s <strong>follow Nathan and his team</strong> as they <strong>utilize AppDynamics to perform a detailed analysis</strong> of the following <strong>aspects of the pre-modernized application</strong> in its current state:</p>
+
+<ul>
+<li>Differentiate issues in the web UI versus the backend services that support it</li>
+<li>Identify all application components, the hosts they run on, and their resource utilization</li>
+<li>Identify all dependencies to backends and dependencies across service APIs</li>
+<li>Identify transactions associated with loan processing that would be effected when decoupling services</li>
+<li>Identify the path those transactions take through the system with all components involved to map them out</li>
+<li>Identify specific components that are causing performance degradation of key business transactions</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/40_appdynamics_advantage.html" title="AppDynamics Advantage"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/50_mobilize/1_review_app.html" title="AD Financial Web UI" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676919882"></script>
+    <script src="/js/jquery.sticky.js?1676919882"></script>
+    <script src="/js/featherlight.min.js?1676919882"></script>
+    <script src="/js/highlight.pack.js?1676919882"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676919882"></script>
+    <script src="/js/learn.js?1676919882"></script>
+    <script src="/js/hugo-learn.js?1676919882"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1676919882"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>

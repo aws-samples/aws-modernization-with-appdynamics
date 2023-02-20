@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on English</title>
+    <link>/20_getting_started.html</link>
+    <description>Recent content in Getting Started on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/20_getting_started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Event Engine</title>
+      <link>/20_getting_started/1_aws_event_engine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/20_getting_started/1_aws_event_engine.html</guid>
+      <description>Logging into AWS Event Engine To complete this workshop, you are provided with an AWS account via the AWS Event Engine service. A 12-digit hash will be provided to you by event staff - this is your unique access code. eg:
+e8476543c00e  Go to https://dashboard.eventengine.run to log into AWS Event Engine.   Enter your unique 12-digit hash code and choose Accept Terms &amp;amp; Login.   Choose AWS Console, then Open AWS Console.</description>
+    </item>
+    
+    <item>
+      <title>AWS Account</title>
+      <link>/20_getting_started/2_aws_account.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/20_getting_started/2_aws_account.html</guid>
+      <description>You are responsible for the cost of the AWS services used while running this workshop in your AWS account.
+Your account must have the ability to create new IAM roles and scope other IAM permissions.
+Create an account  If you don&amp;rsquo;t already have an AWS account with Administrator access: create one now
+ Once you have an AWS account, ensure you are following the remaining workshop steps as an IAM user with administrator access to the AWS account: Create a new IAM user to use for the workshop</description>
+    </item>
+    
+    <item>
+      <title>AppDynamics Account</title>
+      <link>/20_getting_started/3_appd_account.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/20_getting_started/3_appd_account.html</guid>
+      <description>This workshop uses an existing AppDynamics Controller and you will be provided the credentials to access that Controller in the Mobilize module of this workshop. However, if you would like to further explore AppDynamics outside of this workshop, you can use the links below to either sign up for a free trial or purchase a subscription on the AWS Marketplace. 
+ &amp;nbsp; AppDynamics Free Trial
+
+ &amp;nbsp; AppDynamics on AWS Marketplace</description>
+    </item>
+    
+    <item>
+      <title>AWS Credit Request</title>
+      <link>/20_getting_started/4_aws_credits.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/20_getting_started/4_aws_credits.html</guid>
+      <description>To help you cover the AWS service costs incurred by doing this tutorial, AWS Credits are available courtesy of AWS Marketplace. Submit the form and you will receive a confirmation email with an AWS Credit Code. Credits are available while supplies last.  Request AWS Credits         AWS Marketplace is a digital software catalog that makes it easy to find, try, buy, deploy, and manage software that works with AWS.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.99.0" />
+    <meta name="description" content="AppDynamics Workshop">
+<meta name="author" content="James Schneider">
+
+    <link rel="icon" href="https://appd-modernization.awsworkshop.io/images/favicon.png" type="image/x-icon" />
+
+    <title>Start Your Engines !  :: English</title>
+
+    
+    <link href="/css/nucleus.css?1676919882" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676919882" rel="stylesheet">
+    <link href="/css/hybrid.css?1676919882" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676919882" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676919882" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676919882" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676919882" rel="stylesheet">
+    <link href="/css/theme.css?1676919882" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676919882" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1676919882" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1676919882"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/30_workshop_setup/5_start_engines.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><img style="vertical-align:middle;margin:30px;" src="../../images/AWS-Logo_White-Color.png" height="125px">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1676919882"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676919882"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1676919882"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10_backstory.html" title="Backstory" class="dd-item
+        
+        
+        
+        ">
+      <a href="/10_backstory.html">
+          Backstory
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/20_getting_started.html" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/20_getting_started.html">
+          Getting Started
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/1_aws_event_engine.html" title="AWS Event Engine" class="dd-item ">
+        <a href="/20_getting_started/1_aws_event_engine.html">
+        AWS Event Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/2_aws_account.html" title="AWS Account" class="dd-item ">
+        <a href="/20_getting_started/2_aws_account.html">
+        AWS Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/3_appd_account.html" title="AppDynamics Account" class="dd-item ">
+        <a href="/20_getting_started/3_appd_account.html">
+        AppDynamics Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/4_aws_credits.html" title="AWS Credit Request" class="dd-item ">
+        <a href="/20_getting_started/4_aws_credits.html">
+        AWS Credit Request
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/30_workshop_setup.html" title="Workshop Setup" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/30_workshop_setup.html">
+          Workshop Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/1_create_cloud9.html" title="Create Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/1_create_cloud9.html">
+        Create Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/2_create_iam_role.html" title="Create IAM Role for Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/2_create_iam_role.html">
+        Create IAM Role for Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/3_attach_iam_role.html" title="Attach IAM Role to Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/3_attach_iam_role.html">
+        Attach IAM Role to Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/4_cloud9_update.html" title="Update Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/4_cloud9_update.html">
+        Update Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/5_start_engines.html" title="Start Your Engines ! " class="dd-item active">
+        <a href="/30_workshop_setup/5_start_engines.html">
+        Start Your Engines ! 
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/40_appdynamics_advantage.html" title="AppDynamics Advantage" class="dd-item
+        
+        
+        
+        ">
+      <a href="/40_appdynamics_advantage.html">
+          AppDynamics Advantage
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/50_mobilize.html" title="Mobilize" class="dd-item
+        
+        
+        
+        ">
+      <a href="/50_mobilize.html">
+          Mobilize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/1_review_app.html" title="AD Financial Web UI" class="dd-item ">
+        <a href="/50_mobilize/1_review_app.html">
+        AD Financial Web UI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/2_login_appd.html" title="Login to AppDynamics" class="dd-item ">
+        <a href="/50_mobilize/2_login_appd.html">
+        Login to AppDynamics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/3_browser_rum.html" title="End User Monitoring" class="dd-item ">
+        <a href="/50_mobilize/3_browser_rum.html">
+        End User Monitoring
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/4_flowmaps.html" title="Flow Maps" class="dd-item ">
+        <a href="/50_mobilize/4_flowmaps.html">
+        Flow Maps
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/5_business_txns.html" title="Business Transactions" class="dd-item ">
+        <a href="/50_mobilize/5_business_txns.html">
+        Business Transactions
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/6_databases.html" title="Databases" class="dd-item ">
+        <a href="/50_mobilize/6_databases.html">
+        Databases
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/7_summary.html" title="Summary" class="dd-item ">
+        <a href="/50_mobilize/7_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/60_modernize.html" title="Modernize" class="dd-item
+        
+        
+        
+        ">
+      <a href="/60_modernize.html">
+          Modernize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/60_modernize/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/2_accelerate.html" title="Accelerate" class="dd-item ">
+        <a href="/60_modernize/2_accelerate.html">
+        Accelerate
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/3_scale.html" title="Scale" class="dd-item ">
+        <a href="/60_modernize/3_scale.html">
+        Scale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/4_business_iq.html" title="Business iQ" class="dd-item ">
+        <a href="/60_modernize/4_business_iq.html">
+        Business iQ
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/5_summary.html" title="Summary" class="dd-item ">
+        <a href="/60_modernize/5_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/70_operate.html" title="Operate" class="dd-item
+        
+        
+        
+        ">
+      <a href="/70_operate.html">
+          Operate
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/70_operate/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/2_cognition_engine.html" title="Cognition Engine" class="dd-item ">
+        <a href="/70_operate/2_cognition_engine.html">
+        Cognition Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/3_cluster_agent.html" title="Cluster Agent" class="dd-item ">
+        <a href="/70_operate/3_cluster_agent.html">
+        Cluster Agent
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/80_wrapup.html" title="Wrapup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/80_wrapup.html">
+          Wrapup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/1_workshop_teardown.html" title="Workshop Cleanup" class="dd-item ">
+        <a href="/80_wrapup/1_workshop_teardown.html">
+        Workshop Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/2_cloud9_cleanup.html" title="Cloud9 Cleanup" class="dd-item ">
+        <a href="/80_wrapup/2_cloud9_cleanup.html">
+        Cloud9 Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/3_survey.html" title="Survey" class="dd-item ">
+        <a href="/80_wrapup/3_survey.html">
+        Survey
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"><i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/resources/ebook/how-to-monitor-kubernetes-with-confidence"><i class='fas fa-chalkboard-teacher'></i> Monitor Kubentes with Confidence</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/c/dam/r/appdynamics/general-documents/use-cases/biq-use-case-guide-2020.pdf"><i class='fas fa-chalkboard-teacher'></i> 6 Business iQ Use Cases</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/solutions/cloud/cloud-monitoring/kubernetes-monitoring/how-to-monitor-kubernetes-best-practices"><i class='fas fa-chalkboard-teacher'></i> K8s Monitoring Best Practices</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/blog/product/scaling-kubernetes-observability/"><i class='fas fa-chalkboard-teacher'></i> Scaling Kubernetes with AppD</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Advanced Observability with AppDynamics</a> > <a href='/30_workshop_setup.html'>Workshop Setup</a> > Start Your Engines ! 
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#let-s-do-this-span-style-color-4e3eb1-i-class-fas-fa-cog-fa-spin-i-span">Let&rsquo;s do this ! <span style="color: #4e3eb1;"><i class='fas fa-cog fa-spin'></i></span></a></li>
+<li><a href="#what-the-setup-utility-does">What the setup utility does</a></li>
+<li><a href="#additional-setup-in-following-sections">Additional setup in following sections</a></li>
+<li><a href="#what-the-final-architecture-will-look-like">What the final architecture will look like</a></li>
+<li><a href="#next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Start Your Engines ! 
+            </h1>
+          
+
+        
+
+
+
+
+<p><img src="/images/workshop_setup/ad_team_tech_lead.png" alt="image" /></p>
+
+
+<div class="notices warning" ><p>You must <strong>have enough available VPCs, Elastic IPs, and NAT Gatewways in the region you are working in</strong> to successfully <strong>create an EKS Cluster</strong> with a managed node group of 2 nodes.  You also need to have space for three S3 Buckets. If you <strong>run into a problem</strong> during the setup, it is <strong>usually associated with insufficient resources or permissions in your AWS account</strong>.  You can resolve resource constraints by <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html" target="_blank"><strong>requesting a quota increase</strong></a> for your AWS account.</p>
+</div>
+
+
+
+<div class="notices warning" ><p>In order to prevent charges to your AWS account, we recommend cleaning up the infrastructure that gets created with the setup utility. If you plan to keep things running so you can examine the workshop a bit more, please remember to do the cleanup when you are done. It is very easy to leave things running in an AWS account, forget about it, and then accrue charges.</p>
+</div>
+
+
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Just so you understand ahead of time, you can easily clean up all the resources that get created by the setup utility by using the commands below:</p>
+<pre tabindex="0"><code>cd /home/ec2-user/environment
+
+./teardownWorkshop.sh </code></pre>
+<p><br></p>
+
+<h2 id="let-s-do-this-span-style-color-4e3eb1-i-class-fas-fa-cog-fa-spin-i-span">Let&rsquo;s do this ! <span style="color: #4e3eb1;"><i class='fas fa-cog fa-spin'></i></span></h2>
+
+<p><br></p>
+
+<p>Now that you&rsquo;ve got all the prerequisites out of the way, you can kick off the initial setup steps and go grab a cup of coffee <i class='fas fa-coffee'></i> while the setup utility runs.</p>
+
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Ensure you are in your home directory by executing the command below:</p>
+<pre tabindex="0"><code>cd /home/ec2-user/environment</code></pre>
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Download the setup script using the following command:</p>
+<pre tabindex="0"><code>curl --silent -L https://raw.githubusercontent.com/Appdynamics/appd_aws_observability_lab/main/setupWorkshop.sh -o ./setupWorkshop.sh</code></pre>
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use the following command to make the script executable:</p>
+<pre tabindex="0"><code>chmod +x setupWorkshop.sh</code></pre>
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use five (5) letters of your first, and or, your last name to create your unique workshop user name using the command below:</p>
+
+<p><strong>EXAMPLE:</strong>&nbsp; export appd_workshop_user=TOMSM</p>
+<pre tabindex="0"><code>export appd_workshop_user=&lt;YOUR USER NAME&gt;</code></pre>
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use the command below to execute the setup script:</p>
+<pre tabindex="0"><code>./setupWorkshop.sh</code></pre>
+
+<div class="notices info" ><p><span><i class='fas fa-hourglass-half fa-lg'></i></span> The setup utility takes <strong>approximately 7 minutes to complete</strong>.  While you&rsquo;re waiting for the setup to finish you can <strong>go to the AppDynamics Advantage section</strong> where you can <strong>find out why AD Financial selected AppDynamics</strong> as their <strong>preferred observability solution</strong>. <span><i class='fas fa-hourglass-half fa-lg'></i></span></p>
+</div>
+
+
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> The output from the start of the setup script should look like this:</p>
+
+<p><img src="/images/workshop_setup/setup-output-start.png" alt="image" /></p>
+
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> The output from the setup script when it ends, should look like this:</p>
+
+<p><img src="/images/workshop_setup/setup-output-end.png" alt="image" /></p>
+
+<h2 id="what-the-setup-utility-does">What the setup utility does</h2>
+
+<p><strong>01)</strong> Installs Java JDK 1.8 <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>02)</strong> Resizes the Disk on your C9 instance <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>03)</strong> Installs kubectl <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>04)</strong> Installs eksctl <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>05)</strong> Installs docker-compose <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>06)</strong> Installs the AppDynamics Database agent <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>07)</strong> Creates an EC2 security group for external access to RDS Databases <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>08)</strong> Creates RDS databases with the security group attached <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>09)</strong> Creates three S3 buckets <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>10)</strong> Creates two Application Performance Monitoring apps in the AppDynamics Controller <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>11)</strong> Creates two Browser Real User Monitoring apps in the AppDynamics Controller <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>12)</strong> Creates two AppDynamics Database collectors in the AppDynamics Controller <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>13)</strong> Creates an RBAC User in the AppDynamics Controller <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>14)</strong> Creates an RBAC Role in the AppDynamics Controller <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>15)</strong> Adds the RBAC User in the AppDynamics Controller to the appropriate RBAC Roles <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>16)</strong> Deploys the Pre-Modernization application to your local C9 instance <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p><strong>17)</strong> Creates the teardown file</p>
+
+<p>Using a shell script - <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p>Using the AWS Java SDK - <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<p>Using the AppDynamics REST API - <span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span><span style="color: #4e3eb1;"><i class='fas fa-asterisk fa-xs'></i></span></p>
+
+<h2 id="additional-setup-in-following-sections">Additional setup in following sections</h2>
+
+<p>There will be some additional setup steps in the following sections listed below.  There&rsquo;s no need to do them now.  Wait until you&rsquo;ve reached those sections to perform the steps for each section.</p>
+
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Modernize Section</p>
+
+<ul>
+<li>Create the EKS Cluster</li>
+<li>Deploy the Application to EKS</li>
+<li>Deploy the Server Agent to EKS</li>
+</ul>
+
+<p><span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Operate Section</p>
+
+<ul>
+<li>Deploy the Cluster Agent to EKS</li>
+</ul>
+
+<h2 id="what-the-final-architecture-will-look-like">What the final architecture will look like</h2>
+
+<p><img src="/images/workshop_setup/arch_diagram.png" alt="image" /></p>
+
+<p><br></p>
+
+<h2 id="next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></h2>
+
+<p><strong>While you are waiting</strong> for the setup utility to finish, <strong>go to the AppDynamics Advantage section</strong> where you can <strong>find out why AD Financial selected AppDynamics</strong> as their <strong>preferred observability solution</strong>.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/30_workshop_setup/4_cloud9_update.html" title="Update Cloud9 Workspace"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/40_appdynamics_advantage.html" title="AppDynamics Advantage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676919882"></script>
+    <script src="/js/jquery.sticky.js?1676919882"></script>
+    <script src="/js/featherlight.min.js?1676919882"></script>
+    <script src="/js/highlight.pack.js?1676919882"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676919882"></script>
+    <script src="/js/learn.js?1676919882"></script>
+    <script src="/js/hugo-learn.js?1676919882"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1676919882"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

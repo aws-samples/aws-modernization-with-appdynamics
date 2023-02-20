@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ee" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.99.0" />
+    <meta name="description" content="AppDynamics Workshop">
+<meta name="author" content="James Schneider">
+
+    <link rel="icon" href="https://appd-modernization.awsworkshop.io/images/favicon.png" type="image/x-icon" />
+
+    <title>Advanced Observability with AppDynamics :: Event Engine Setup</title>
+
+    
+    <link href="/css/nucleus.css?1676919882" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676919882" rel="stylesheet">
+    <link href="/css/hybrid.css?1676919882" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676919882" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676919882" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676919882" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676919882" rel="stylesheet">
+    <link href="/css/theme.css?1676919882" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676919882" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1676919882" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1676919882"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ee/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><img style="vertical-align:middle;margin:30px;" src="../../images/AWS-Logo_White-Color.png" height="125px">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1676919882"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676919882"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/ee";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1676919882"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"><i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/resources/ebook/how-to-monitor-kubernetes-with-confidence"><i class='fas fa-chalkboard-teacher'></i> Monitor Kubentes with Confidence</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/c/dam/r/appdynamics/general-documents/use-cases/biq-use-case-guide-2020.pdf"><i class='fas fa-chalkboard-teacher'></i> 6 Business iQ Use Cases</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/solutions/cloud/cloud-monitoring/kubernetes-monitoring/how-to-monitor-kubernetes-best-practices"><i class='fas fa-chalkboard-teacher'></i> K8s Monitoring Best Practices</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/blog/product/scaling-kubernetes-observability/"><i class='fas fa-chalkboard-teacher'></i> Scaling Kubernetes with AppD</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+
+        
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+ 
+
+
+<p><br></p>
+
+<p><img src="/images/appd_logo.png" alt="image" />
+<br></p>
+
+<h2 id="welcome-to-the-advanced-observability-with-appdynamics-workshop">Welcome to the Advanced Observability with AppDynamics workshop!</h2>
+
+<h4 id="in-this-workshop-you-will-learn-how-appdynamics-observability-can-help-you-apply-modernization-strategies-that-keep-your-digital-first-organization-moving-at-speed-ensure-operational-optimization-avoid-unnecessary-risks-and-maximize-your-innovation">In this workshop you will learn how AppDynamics Observability can help you apply modernization strategies that keep your digital-first organization moving at speed, ensure operational optimization, avoid unnecessary risks, and maximize your innovation!</h4>
+
+<p>&nbsp;
+<br></p>
+
+<p><img src="/images/ad_financial_logo.png" alt="image" /></p>
+
+<p><img src="/images/01_flowmap.png" alt="image" /></p>
+
+<h4 id="throughout-the-workshop-you-will-experience-how-a-ficticious-firm-ad-financial-corporation-used-appdynamics-observability-to-overcome-their-application-modernization-challenges-as-well-as-how-appdynamics-provides-visibilty-catering-to-perspectives-of-the-different-personas-of-their-teams-as-they-work-together-to-modernize-and-optimize-their-applications-and-operations-to-maximize-innovation-in-a-highly-competitive-market">Throughout the workshop you will experience how a ficticious firm, AD Financial corporation used AppDynamics Observability to overcome their application modernization challenges, as well as how AppDynamics provides visibilty catering to perspectives of the different personas of their teams as they work together to modernize and optimize their applications and operations to maximize innovation in a highly competitive market.</h4>
+
+<h2 id="learning-objectives">Learning Objectives</h2>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-gain-real-time-visibility-of-your-application-topology-including-all-components-dependencies-and-activities-as-they-are-automatically-discovered-and-mapped-out">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Gain real-time visibility of your application topology including all components, dependencies, and activities as they are automatically discovered and mapped out.</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-measure-the-performance-of-key-business-transactions-in-your-application-both-before-and-after-your-move-to-kubernetes-to-validate-the-success-of-your-modernization-effort">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Measure the performance of key business transactions in your application both before and after your move to Kubernetes to validate the success of your modernization effort.</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-make-sure-application-performance-is-fully-optimized-by-your-infrastructure-with-server-database-and-native-cloud-visibility-when-running-managed-containerized-services">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Make sure application performance is fully optimized by your infrastructure with server, database, and native cloud visibility when running managed containerized services.</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-dramatically-reduce-mean-time-to-resolution-and-proactively-detect-performance-issues-using-machine-learning-and-artificial-intelligence-to-automate-anomaly-detection-and-root-cause-analysis">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Dramatically reduce mean time to resolution and proactively detect performance issues using machine learning and artificial intelligence to automate anomaly detection and root cause analysis.</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-visualize-the-entire-user-experience-journey-across-your-application-and-view-performance-to-identify-bottlenecks-prioritize-issues-and-determine-the-most-frequent-paths-taken-by-end-users">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Visualize the entire user experience journey across your application and view performance to identify bottlenecks, prioritize issues, and determine the most frequent paths taken by end users.</h5>
+
+<h2 id="who-can-benefit">Who can benefit?</h2>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-architects">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Architects </h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-developers">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Developers</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-technical-leads">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Technical leads</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-devops-teams">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; DevOps teams</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-operations-engineers">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Operations engineers</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-infrastructure-teams">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Infrastructure teams </h5>
+
+<h2 id="workshop-structure">Workshop Structure</h2>
+
+<h5 id="nbsp-the-workshop-is-divided-into-the-sections-listed-below-plan-on-2-5-hours-to-complete-the-course">&nbsp; The workshop is divided into the sections listed below.  Plan on 2.5 hours to complete the course.</h5>
+
+<p><br></p>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-prerequisites-10-minutes-create-and-configure-a-cloud9-instance-an-iam-admin-role-and-check-for-eks-resources">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; <strong>Prerequisites</strong> <strong><em>(10 minutes)</em></strong> - Create and configure a Cloud9 instance, an IAM Admin Role, and check for EKS resources</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-workshop-setup-30-minutes-run-a-script-that-creates-aws-resources-deploys-applications-and-configures-appdynamics">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; <strong>Workshop setup</strong> <strong><em>(30 minutes)</em></strong> - Run a script that creates AWS resources, deploys applications, and configures AppDynamics</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-appdynamics-advantage-10-minutes-review-how-appdynamics-provides-value-to-your-modernization-effort">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; <strong>AppDynamics Advantage</strong> <strong><em>(10 minutes)</em></strong> - Review how AppDynamics provides value to your modernization effort</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-workshop-exercises-90-minutes-divided-into-three-modules-mobilize-modernize-operate">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; <strong>Workshop exercises</strong> <strong><em>(90 minutes)</em></strong> - Divided into three modules: mobilize, modernize, operate</h5>
+
+<h5 id="nbsp-nbsp-nbsp-nbsp-span-style-color-4e3eb1-i-class-fas-fa-certificate-fa-xs-i-span-nbsp-cleanup-resources-10-minutes-run-a-script-to-tear-down-workshop-resources">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; <strong>Cleanup Resources</strong> <strong><em>(10 minutes)</em></strong> - Run a script to tear down workshop resources</h5>
+	
+  
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676919882"></script>
+    <script src="/js/jquery.sticky.js?1676919882"></script>
+    <script src="/js/featherlight.min.js?1676919882"></script>
+    <script src="/js/highlight.pack.js?1676919882"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676919882"></script>
+    <script src="/js/learn.js?1676919882"></script>
+    <script src="/js/hugo-learn.js?1676919882"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1676919882"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

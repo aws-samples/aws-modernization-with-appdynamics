@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.99.0" />
+    <meta name="description" content="AppDynamics Workshop">
+<meta name="author" content="James Schneider">
+
+    <link rel="icon" href="https://appd-modernization.awsworkshop.io/images/favicon.png" type="image/x-icon" />
+
+    <title>End User Monitoring :: English</title>
+
+    
+    <link href="/css/nucleus.css?1676919882" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676919882" rel="stylesheet">
+    <link href="/css/hybrid.css?1676919882" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676919882" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676919882" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676919882" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676919882" rel="stylesheet">
+    <link href="/css/theme.css?1676919882" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676919882" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1676919882" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1676919882"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/50_mobilize/3_browser_rum.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><img style="vertical-align:middle;margin:30px;" src="../../images/AWS-Logo_White-Color.png" height="125px">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1676919882"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676919882"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1676919882"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10_backstory.html" title="Backstory" class="dd-item
+        
+        
+        
+        ">
+      <a href="/10_backstory.html">
+          Backstory
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/20_getting_started.html" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/20_getting_started.html">
+          Getting Started
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/1_aws_event_engine.html" title="AWS Event Engine" class="dd-item ">
+        <a href="/20_getting_started/1_aws_event_engine.html">
+        AWS Event Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/2_aws_account.html" title="AWS Account" class="dd-item ">
+        <a href="/20_getting_started/2_aws_account.html">
+        AWS Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/3_appd_account.html" title="AppDynamics Account" class="dd-item ">
+        <a href="/20_getting_started/3_appd_account.html">
+        AppDynamics Account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/4_aws_credits.html" title="AWS Credit Request" class="dd-item ">
+        <a href="/20_getting_started/4_aws_credits.html">
+        AWS Credit Request
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/30_workshop_setup.html" title="Workshop Setup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/30_workshop_setup.html">
+          Workshop Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/1_create_cloud9.html" title="Create Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/1_create_cloud9.html">
+        Create Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/2_create_iam_role.html" title="Create IAM Role for Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/2_create_iam_role.html">
+        Create IAM Role for Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/3_attach_iam_role.html" title="Attach IAM Role to Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/3_attach_iam_role.html">
+        Attach IAM Role to Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/4_cloud9_update.html" title="Update Cloud9 Workspace" class="dd-item ">
+        <a href="/30_workshop_setup/4_cloud9_update.html">
+        Update Cloud9 Workspace
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/30_workshop_setup/5_start_engines.html" title="Start Your Engines ! " class="dd-item ">
+        <a href="/30_workshop_setup/5_start_engines.html">
+        Start Your Engines ! 
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/40_appdynamics_advantage.html" title="AppDynamics Advantage" class="dd-item
+        
+        
+        
+        ">
+      <a href="/40_appdynamics_advantage.html">
+          AppDynamics Advantage
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/50_mobilize.html" title="Mobilize" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/50_mobilize.html">
+          Mobilize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/1_review_app.html" title="AD Financial Web UI" class="dd-item ">
+        <a href="/50_mobilize/1_review_app.html">
+        AD Financial Web UI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/2_login_appd.html" title="Login to AppDynamics" class="dd-item ">
+        <a href="/50_mobilize/2_login_appd.html">
+        Login to AppDynamics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/3_browser_rum.html" title="End User Monitoring" class="dd-item active">
+        <a href="/50_mobilize/3_browser_rum.html">
+        End User Monitoring
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/4_flowmaps.html" title="Flow Maps" class="dd-item ">
+        <a href="/50_mobilize/4_flowmaps.html">
+        Flow Maps
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/5_business_txns.html" title="Business Transactions" class="dd-item ">
+        <a href="/50_mobilize/5_business_txns.html">
+        Business Transactions
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/6_databases.html" title="Databases" class="dd-item ">
+        <a href="/50_mobilize/6_databases.html">
+        Databases
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/50_mobilize/7_summary.html" title="Summary" class="dd-item ">
+        <a href="/50_mobilize/7_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/60_modernize.html" title="Modernize" class="dd-item
+        
+        
+        
+        ">
+      <a href="/60_modernize.html">
+          Modernize
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/60_modernize/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/2_accelerate.html" title="Accelerate" class="dd-item ">
+        <a href="/60_modernize/2_accelerate.html">
+        Accelerate
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/3_scale.html" title="Scale" class="dd-item ">
+        <a href="/60_modernize/3_scale.html">
+        Scale
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/4_business_iq.html" title="Business iQ" class="dd-item ">
+        <a href="/60_modernize/4_business_iq.html">
+        Business iQ
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/60_modernize/5_summary.html" title="Summary" class="dd-item ">
+        <a href="/60_modernize/5_summary.html">
+        Summary
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/70_operate.html" title="Operate" class="dd-item
+        
+        
+        
+        ">
+      <a href="/70_operate.html">
+          Operate
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/1_deployment.html" title="Deployment" class="dd-item ">
+        <a href="/70_operate/1_deployment.html">
+        Deployment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/2_cognition_engine.html" title="Cognition Engine" class="dd-item ">
+        <a href="/70_operate/2_cognition_engine.html">
+        Cognition Engine
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/70_operate/3_cluster_agent.html" title="Cluster Agent" class="dd-item ">
+        <a href="/70_operate/3_cluster_agent.html">
+        Cluster Agent
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/80_wrapup.html" title="Wrapup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/80_wrapup.html">
+          Wrapup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/1_workshop_teardown.html" title="Workshop Cleanup" class="dd-item ">
+        <a href="/80_wrapup/1_workshop_teardown.html">
+        Workshop Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/2_cloud9_cleanup.html" title="Cloud9 Cleanup" class="dd-item ">
+        <a href="/80_wrapup/2_cloud9_cleanup.html">
+        Cloud9 Cleanup
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/80_wrapup/3_survey.html" title="Survey" class="dd-item ">
+        <a href="/80_wrapup/3_survey.html">
+        Survey
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"><i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/resources/ebook/how-to-monitor-kubernetes-with-confidence"><i class='fas fa-chalkboard-teacher'></i> Monitor Kubentes with Confidence</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/c/dam/r/appdynamics/general-documents/use-cases/biq-use-case-guide-2020.pdf"><i class='fas fa-chalkboard-teacher'></i> 6 Business iQ Use Cases</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/solutions/cloud/cloud-monitoring/kubernetes-monitoring/how-to-monitor-kubernetes-best-practices"><i class='fas fa-chalkboard-teacher'></i> K8s Monitoring Best Practices</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appdynamics.com/blog/product/scaling-kubernetes-observability/"><i class='fas fa-chalkboard-teacher'></i> Scaling Kubernetes with AppD</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Advanced Observability with AppDynamics</a> > <a href='/50_mobilize.html'>Mobilize</a> > End User Monitoring
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#the-first-few-challanges-nathan-and-his-team-need-to-address-are-related-to-the-web-frontend">The first few challanges Nathan and his team need to address are related to the web frontend</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#navigate-to-the-brum-application">Navigate to the BRUM Application</a></li>
+<li><a href="#browser-app-dashboard">Browser App Dashboard</a></li>
+<li><a href="#pages-ajax-requests">Pages &amp; AJAX Requests</a></li>
+<li><a href="#base-page-dashboard">Base Page Dashboard</a></li>
+<li><a href="#business-transaction-correlation">Business Transaction Correlation</a></li>
+<li><a href="#browser-snapshots">Browser Snapshots</a></li>
+<li><a href="#experience-journey-map">Experience Journey Map</a></li>
+<li><a href="#here-s-the-advantage">Here&rsquo;s the Advantage</a></li>
+<li><a href="#takeaways">Takeaways</a></li>
+<li><a href="#next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              End User Monitoring
+            </h1>
+          
+
+        
+
+
+
+
+<p><img src="/images/mobilize/ad_team_architect.png" alt="image" /></p>
+
+<h4 id="the-first-few-challanges-nathan-and-his-team-need-to-address-are-related-to-the-web-frontend">The first few challanges Nathan and his team need to address are related to the web frontend</h4>
+
+<ul>
+<li>Differentiating issues in the web UI versus the backend services</li>
+<li>Mapping the web pages to the backend business transactions</li>
+<li>Baselining the end user experience on the web site with:
+
+<ul>
+<li>End User Response Time</li>
+<li>Drop-off rates in the user journey</li>
+</ul></li>
+</ul>
+
+<h2 id="navigate-to-the-brum-application">Navigate to the BRUM Application</h2>
+
+<p>Once you have logged into the AppDynamics controller, you should see the home page. Let&rsquo;s start by finding the pre-modernized version of the AD Financial BRUM (<strong>Browser Real User Monitoring</strong>) application and open it using the steps below.</p>
+
+<p><strong>1 .</strong>  Click on the <strong>Home</strong> option on the top menu.</p>
+
+<ul>
+<li>In the <strong>User Experience</strong> tile, you should see the application named like <strong>&lt;your_lab_user_name&gt;-AD-Fin-PreMod-Web</strong></li>
+</ul>
+
+<p><strong>2 .</strong>  Click on the application name to open the Overview Dashboard for the application.</p>
+
+<p><img src="/images/mobilize/open_brum_app.png" alt="image" /></p>
+
+<h2 id="browser-app-dashboard">Browser App Dashboard</h2>
+
+<p>The Browser App Overview dashboard displays a set of configurable widgets.</p>
+
+<p><strong>1 .</strong>  The dashbaord shows <strong>key high-level indicators of web application performance</strong>, including:</p>
+
+<ul>
+<li>Page Requests per Minute</li>
+<li>End User Response Time Trend and Distribution</li>
+<li>Total Page Requests by Geo</li>
+<li>End User Response Time by Geo</li>
+<li>Top 10 Browsers and Devices</li>
+<li>Top 5 Pages and Countries by Total Requests</li>
+</ul>
+
+<p>You can read more about the Browser Application Overview dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard" target="_blank"><strong>here</strong></a></p>
+
+<p><strong>2 .</strong>  Take a moment to explore the:</p>
+
+<ul>
+<li><strong>Geo Dashboard</strong>
+
+<ul>
+<li>You can read more about the Browser Application Geo dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#BrowserAppDashboard-geoGeoTab" target="_blank"><strong>here</strong></a></li>
+</ul></li>
+<li><strong>Browser Snapshots</strong>
+
+<ul>
+<li>You can read more about the Browser Snapshots <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots" target="_blank"><strong>here</strong></a> and <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots/page-snapshots" target="_blank"><strong>here</strong></a></li>
+</ul></li>
+<li><strong>Usage Stats</strong>
+
+<ul>
+<li>You can read more about the Browser Application Usage Stats dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#BrowserAppDashboard-usagestatsUsageStats" target="_blank"><strong>here</strong></a></li>
+</ul></li>
+</ul>
+
+<p><strong>3 .</strong>  Click on the <strong>Pages &amp; AJAX Requests</strong> on the left to get a <strong>breakdown of metrics for each web page including End User Response Time</strong>.</p>
+
+<p><img src="/images/mobilize/brum_app_01.png" alt="image" /></p>
+
+<h2 id="pages-ajax-requests">Pages &amp; AJAX Requests</h2>
+
+<p>We want to identify the web pages that are having errors and or poor end user response times so we can focus and prioritize them if needed.</p>
+
+<p><strong>1 .</strong>  Sort the list of web pages by the highest end user response time.
+- Notice that we see <strong>5 pages with the highest response times</strong>, all of them <strong>related to the loan approval process</strong></p>
+
+<p><strong>2 .</strong>  We can tell right away that the <strong>high response times</strong> are <strong>mostly due to the First Byte Time (ms) metric</strong>
+- Though the <strong>DOM Ready Time (ms) metric shows higher timings</strong> than <strong>the First Byte Time (ms) metric</strong>, we&rsquo;ll explain in the next step <strong>why the former metric is more revealing</strong></p>
+
+<p><strong>3 .</strong>  Double-click on the <strong>www&#46;ad-financial&#46;com&#47;&#47;loanverifydocumentation</strong> page so we can look at the detailed timing breakdown for that page</p>
+
+<p><img src="/images/mobilize/brum_app_02.png" alt="image" /></p>
+
+<h2 id="base-page-dashboard">Base Page Dashboard</h2>
+
+<p>The Base Page Dashboard shows you how a web page has been performing over time, within the context of the time range you have selected to view.</p>
+
+<p><strong>1 .</strong>  At the top of the Base Page dashboard you will see key performance indicators, End User Response Time, Load, Cache Hits, and Page Views with JS errors across the period selected in the timeframe dropdown from the upper-right side of the Controller UI. Cache Hits indicates resources fetched from a cache, such as a CDN, rather than from the source.</p>
+
+<p><strong>2 .</strong>  In the Timing Breakdown section you will see a waterfall graph that displays the average times needed for each aspect of the page load process. For more information on what each of the metrics measures, hover over its name on the left. A popup appears with a definition. For more detailed information, see <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/browser-rum-metrics" target="_blank"><strong>Browser RUM Metrics</strong></a></p>
+
+<p><img src="/images/mobilize/brum_app_03.png" alt="image" /></p>
+
+<p>The <strong>First Byte Time metric is important</strong> since it <strong>tells us how much time was taken from when the page was requested, until the initial part of the response was received</strong> from the server or backend.  This indicates that <strong>the majority of slowness for this page is happening on the server side</strong>.</p>
+
+<p>We can see in this example that <strong>network latency was an insignificant part</strong> of the total response time.  We can also see in the waterfall view that the <strong>time taken to process the response after it was received and render the page was a small portion</strong> of the total time.</p>
+
+<p>You can <strong>investigate the other 4 web pages related to the loan approval process</strong> to validate <strong>the majority percentage of their high end user response times is happening on the backend</strong>.</p>
+
+<h2 id="business-transaction-correlation">Business Transaction Correlation</h2>
+
+<p>AppDynamics <strong>automatically correlates the specific business transactions</strong> on the server side that are <strong>accessed by the Web Page and the AJAX Requests and iFrames within the page</strong>.  This valuable feature <strong>allows you to easily map out the dependencies between the frontend and the backend</strong>.</p>
+
+<p><strong>1 .</strong>  Use the scroll bar on the right to scroll down until you see the <strong>Related Business Transactions</strong> section.</p>
+
+<p><strong>2 .</strong>  We can see that this web page is accessing the <strong>/rest/loanVerifyDocumentation</strong> business transaction.</p>
+
+<p><strong>3 .</strong>  Now click on the <strong>Browser Snapshots</strong> tab to see individual requests for this web page.</p>
+
+<p><img src="/images/mobilize/brum_app_04.png" alt="image" /></p>
+
+<h2 id="browser-snapshots">Browser Snapshots</h2>
+
+<p>AppDynamics automatically captures detailed data on each end user request to a web page as well as capturing the entire session containing the path each end user took through the web site. Here we will look at an example of a single end user page request to show you how AppDynamics automatically correlates the entire flow of an end user request.</p>
+
+<p><strong>1 .</strong>  Sort the browser snapshots on the column named <strong>Has Server Snapshot</strong>.</p>
+
+<p><strong>2 .</strong>  Double-click on the browser snapshot that has a associated server snapshot.</p>
+
+<p><img src="/images/mobilize/brum_app_05.png" alt="image" /></p>
+
+<p>You can see that the browser snapshot shows the same waterfall timing breakdown and we notice once again that the majority of the time is spent waiting on the backend to fulfill the request.</p>
+
+<p><img src="/images/mobilize/brum_app_06.png" alt="image" /></p>
+
+<p><strong>1 .</strong>  Use the scroll bar on the right to scroll down until you see the associated <strong>Server Snapshot</strong>.</p>
+
+<p><strong>2 .</strong>  Double-click on the server snapshot to follow the path of the user request to the backend to see why this web page request had such a high response time.</p>
+
+<p><img src="/images/mobilize/brum_app_07.png" alt="image" /></p>
+
+<p>You can drill down through the entire path of the transaction with the server side snapshot to quickly find root cause.  We&rsquo;ll explore server snapshots in more detail when we cover the upcoming section on Business Transactions.</p>
+
+<p><img src="/images/mobilize/brum_app_08.png" alt="image" /></p>
+
+<h2 id="experience-journey-map">Experience Journey Map</h2>
+
+<p>The <strong>Experience Journey Map provides real-time insights</strong> into application and business performance, <strong>visualizing key user journeys</strong> and the <strong>correlation between performance and traffic</strong>. This perspective <strong>unifies all application stakeholders</strong>, application owners, developers, and IT operations.</p>
+
+<p><strong>1 .</strong>  Click on the <strong>Experience Journey Map</strong> on the left to see how <strong>AppDynamics automatically maps out the journey</strong> that users take through the browser application.</p>
+
+<p>From here we can see the path of the <strong>loan approval process</strong> to understand:</p>
+
+<ul>
+<li>the numer of requests for each stage and page in the process flow</li>
+<li>the performance of each stage and page in the process flow</li>
+<li>the drop-off rate from page to page in the process flow</li>
+</ul>
+
+<p><img src="/images/mobilize/brum_app_09.png" alt="image" /></p>
+
+<!-- 
+
+The **Experience Journey Map provides real-time insights** into application and business performance, **visualizing key user journeys** and the **correlation between performance and traffic**. This perspective **unifies all application stakeholders:** application owners, developers, and IT operations.
+
+From here we can see: 
+
+**1 .**  The path of the **loan approval process** to understand:
+
+- the numer of requests for each stage and page in the process flow
+- the performance of each stage and page in the process flow
+- the drop-off rate from page to page in the process flow
+
+**2 .**  Click on the **loanunderwritingcomplete** page
+
+![image](/images/mobilize/brum_app_02.png)
+
+<br>
+
+Drilling into the **loanunderwritingcomplete** page shows us:
+
+- The total user visits from all sources
+- The total user visits from the top incoming source
+- The drop-off rate from the prior page to this page
+
+**1 .**  Click here to expand the **details for the incoming traffic** 
+
+**2 .**  Click here to expand the **details for the outgoing traffic**
+
+![image](/images/mobilize/brum_app_03.png)
+
+<br>
+
+For here we can see the **performance breakdowns** for **each traffic source**:
+
+**1 .**  The incoming traffic from the **loancreditcheck** page **shows issues with a large percentage** of **slow and very slow requests**.
+
+**2 .**  The outgoing traffic to the **loanapproved** page **shows issues with almost 100%** of **very slow requests**.
+
+![image](/images/mobilize/brum_app_04.png)
+
+<br>
+
+To see more detail about the traffic from the **loancreditcheck** page to the **loanunderwritingcomplete** page:
+
+**1 .**  Click here to bring up the detail panel for the traffic between the **loancreditcheck** page and the **loanunderwritingcomplete** page.
+
+**2 .**  Review the detailed description of state of the traffic from the **loancreditcheck** page.
+
+**2 .**  Expand the **details of the slow requests** to view the **breakdown of browsers and devices used to make the requests**.
+
+![image](/images/mobilize/brum_app_05.png)  -->
+
+<h2 id="here-s-the-advantage">Here&rsquo;s the Advantage</h2>
+
+<ul>
+<li>Identify and <strong>take action on critical issues</strong> with the frontend to <strong>optimize end user experience</strong>.</li>
+<li><strong>Aggregate and display user journeys</strong> to <strong>understand the most frequent paths</strong> through the application.</li>
+<li>Understand the <strong>mapping of dependencies</strong> between <strong>the components of the frontend and the backend business transactions they utilize</strong>.</li>
+</ul>
+
+
+<div class="notices info" ><p>All the dashboards and the browser snapshot views seen in this section are provided OOTB and the content they contain is real-time, dynamic, and reflects the data gathered from the AppDynamics Browser Real User Monitoring Agent.</p>
+</div>
+
+
+<h2 id="takeaways">Takeaways</h2>
+
+<ul>
+<li>We&rsquo;ve <strong>identified the 5 web pages</strong> related to the loan approval process <strong>having issues</strong></li>
+<li>We have proved <strong>the degraded end user response response times</strong> for those pages <strong>are backend related</strong></li>
+<li>We now have an <strong>accurate mapping</strong> of those <strong>pages to the backend business transactions</strong></li>
+<li>We&rsquo;ve <strong>documented the drop-off rates</strong> for each stage <strong>of the loan approval process</strong></li>
+</ul>
+
+<h2 id="next-i-class-fas-fa-cog-fa-spin-i">Next <i class='fas fa-cog fa-spin'></i></h2>
+
+<p>In the next section <strong>we&rsquo;ll use AppDynamics Flow Maps</strong> to dive deeper and <strong>gain valuable insights into the backend systems that service the frontend</strong>.</p>
+
+<!---
+
+<div class="notices warning" ><p>The Cloud9 workspace should be built by an IAM user with Administrator privileges,
+not the root account user. Please ensure you are logged in as an IAM user, not the root
+account user.</p>
+</div>
+
+-->
+
+<!---
+
+<div class="notices note" ><p>This workshop was designed to run in the <strong>Oregon (us-west-2)</strong> region. <strong>Please don&rsquo;t
+run in any other region.</strong> Future versions of this workshop will expand region availability,
+and this message will be removed.</p>
+</div>
+
+-->
+
+<!---
+
+<div class="notices info" ><p>This workshop was designed to run in the <strong>Oregon (us-west-2)</strong> region. <strong>Please don&rsquo;t
+run in any other region.</strong> Future versions of this workshop will expand region availability,
+and this message will be removed.</p>
+</div>
+
+-->
+
+<!---
+
+
+<div class="notices tip" ><p>These key metrics become even more valuable over time with deeper insights into the usage patterns</p>
+</div>
+
+
+
+
+<div class="notices tip" ><p>Ad blockers, javascript disablers, and tracking blockers should be disabled for
+the cloud9 domain, or connecting to the workspace might be impacted.
+Cloud9 requires third-party-cookies. You can whitelist the <a href="https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading" target="_blank">specific domains</a>.</p>
+</div>
+
+-->
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/50_mobilize/2_login_appd.html" title="Login to AppDynamics"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/50_mobilize/4_flowmaps.html" title="Flow Maps" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676919882"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676919882"></script>
+    <script src="/js/jquery.sticky.js?1676919882"></script>
+    <script src="/js/featherlight.min.js?1676919882"></script>
+    <script src="/js/highlight.pack.js?1676919882"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676919882"></script>
+    <script src="/js/learn.js?1676919882"></script>
+    <script src="/js/hugo-learn.js?1676919882"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1676919882"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

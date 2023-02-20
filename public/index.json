@@ -1,0 +1,144 @@
+[
+	{	"pageTitle": "Index",
+		"relativePagePath": "/en/"
+	},
+	{
+		"pageTitle": "Backstory",
+		"relativePagePath": "/10_backstory.html"
+	},
+	{
+		"pageTitle": "Getting Started",
+		"relativePagePath": "/20_getting_started.html"
+	},
+	{
+		"pageTitle": "AWS Event Engine",
+		"relativePagePath": "/20_getting_started/1_aws_event_engine.html"
+	},
+	{
+		"pageTitle": "AWS Account",
+		"relativePagePath": "/20_getting_started/2_aws_account.html"
+	},
+	{
+		"pageTitle": "AppDynamics Account",
+		"relativePagePath": "/20_getting_started/3_appd_account.html"
+	},
+	{
+		"pageTitle": "AWS Credit Request",
+		"relativePagePath": "/20_getting_started/4_aws_credits.html"
+	},
+	{
+		"pageTitle": "Workshop Setup",
+		"relativePagePath": "/30_workshop_setup.html"
+	},
+	{
+		"pageTitle": "Create Cloud9 Workspace",
+		"relativePagePath": "/30_workshop_setup/1_create_cloud9.html"
+	},
+	{
+		"pageTitle": "Create IAM Role for Workspace",
+		"relativePagePath": "/30_workshop_setup/2_create_iam_role.html"
+	},
+	{
+		"pageTitle": "Attach IAM Role to Workspace",
+		"relativePagePath": "/30_workshop_setup/3_attach_iam_role.html"
+	},
+	{
+		"pageTitle": "Update Cloud9 Workspace",
+		"relativePagePath": "/30_workshop_setup/4_cloud9_update.html"
+	},
+	{
+		"pageTitle": "Start Your Engines ! ",
+		"relativePagePath": "/30_workshop_setup/5_start_engines.html"
+	},
+	{
+		"pageTitle": "AppDynamics Advantage",
+		"relativePagePath": "/40_appdynamics_advantage.html"
+	},
+	{
+		"pageTitle": "Mobilize",
+		"relativePagePath": "/50_mobilize.html"
+	},
+	{
+		"pageTitle": "AD Financial Web UI",
+		"relativePagePath": "/50_mobilize/1_review_app.html"
+	},
+	{
+		"pageTitle": "Login to AppDynamics",
+		"relativePagePath": "/50_mobilize/2_login_appd.html"
+	},
+	{
+		"pageTitle": "End User Monitoring",
+		"relativePagePath": "/50_mobilize/3_browser_rum.html"
+	},
+	{
+		"pageTitle": "Flow Maps",
+		"relativePagePath": "/50_mobilize/4_flowmaps.html"
+	},
+	{
+		"pageTitle": "Business Transactions",
+		"relativePagePath": "/50_mobilize/5_business_txns.html"
+	},
+	{
+		"pageTitle": "Databases",
+		"relativePagePath": "/50_mobilize/6_databases.html"
+	},
+	{
+		"pageTitle": "Summary",
+		"relativePagePath": "/50_mobilize/7_summary.html"
+	},
+	{
+		"pageTitle": "Modernize",
+		"relativePagePath": "/60_modernize.html"
+	},
+	{
+		"pageTitle": "Deployment",
+		"relativePagePath": "/60_modernize/1_deployment.html"
+	},
+	{
+		"pageTitle": "Accelerate",
+		"relativePagePath": "/60_modernize/2_accelerate.html"
+	},
+	{
+		"pageTitle": "Scale",
+		"relativePagePath": "/60_modernize/3_scale.html"
+	},
+	{
+		"pageTitle": "Business iQ",
+		"relativePagePath": "/60_modernize/4_business_iq.html"
+	},
+	{
+		"pageTitle": "Summary",
+		"relativePagePath": "/60_modernize/5_summary.html"
+	},
+	{
+		"pageTitle": "Operate",
+		"relativePagePath": "/70_operate.html"
+	},
+	{
+		"pageTitle": "Deployment",
+		"relativePagePath": "/70_operate/1_deployment.html"
+	},
+	{
+		"pageTitle": "Cognition Engine",
+		"relativePagePath": "/70_operate/2_cognition_engine.html"
+	},
+	{
+		"pageTitle": "Cluster Agent",
+		"relativePagePath": "/70_operate/3_cluster_agent.html"
+	},
+	{
+		"pageTitle": "Wrapup",
+		"relativePagePath": "/80_wrapup.html"
+	},
+	{
+		"pageTitle": "Workshop Cleanup",
+		"relativePagePath": "/80_wrapup/1_workshop_teardown.html"
+	},
+	{
+		"pageTitle": "Cloud9 Cleanup",
+		"relativePagePath": "/80_wrapup/2_cloud9_cleanup.html"
+	},
+	{
+		"pageTitle": "Survey",
+		"relativePagePath": "/80_wrapup/3_survey.html"
+	}]
