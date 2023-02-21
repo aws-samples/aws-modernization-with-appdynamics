@@ -87,6 +87,37 @@ weight = 50
   [markup.blackFriday]
     hrefTargetBlank = true
 
+[deployment]
+order = [".jpg$", ".gif$", ".png$"]
+[[deployment.targets]]
+name = "aws-s3"
+URL = "s3://povplaybook-modernize-appdpartnerlabs-net-stat-s3bucketroot-3gr431dyi9ra?region=us-east-1"
+
+cloudFrontDistributionID = "E2R0AYHDD6DVAH"
+
+
+[[deployment.matchers]]
+# Cache static assets for 1 year.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+# Set custom content type for /sitemap.xml
+pattern = "^sitemap\\.xml$"
+contentType = "application/xml"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true
+
+
 [Languages] # Modify to change the language/version settings and/or version secondary extensions
 [Languages.en]
 title = "English"
