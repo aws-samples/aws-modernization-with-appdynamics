@@ -42,18 +42,18 @@ You can use Application Analytics with the APM, Browser RUM, Mobile RUM, and Bro
 
 #### Analytics Data Collection
 
-- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/collect-transaction-analytics-data" target="_blank">**Collect Transaction Analytics Data**</a>
-- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/collect-log-analytics-data" target="_blank">**Collect Log Analytics Data**</a>
-- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/business-transaction-and-log-correlation" target="_blank">**Business Transaction and Log Correlation**</a>
-- <a href="https://docs.appdynamics.com/latest/en/analytics/configure-analytics/collect-transaction-analytics-data/collect-business-data-from-sql-calls" target="_blank">**Collect Business Data From SQL Calls**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/configure-analytics/collect-transaction-analytics-data" target="_blank">**Collect Transaction Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/configure-analytics/collect-log-analytics-data" target="_blank">**Collect Log Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/configure-analytics/business-transaction-and-log-correlation" target="_blank">**Business Transaction and Log Correlation**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/configure-analytics/collect-transaction-analytics-data/collect-business-data-from-sql-calls" target="_blank">**Collect Business Data From SQL Calls**</a>
 
 
 #### Using Application Analytics
 
-- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/business-journeys" target="_blank">**Business Journeys**</a>
-- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/experience-level-management" target="_blank">**Experience Level Management**</a>
-- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/search-analytics-data" target="_blank">**Search Analytics Data**</a>
-- <a href="https://docs.appdynamics.com/latest/en/analytics/using-analytics-data/visualize-analytics-data" target="_blank">**Visualize Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/using-analytics-data/business-journeys" target="_blank">**Business Journeys**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/using-analytics-data/experience-level-management" target="_blank">**Experience Level Management**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/using-analytics-data/search-analytics-data" target="_blank">**Search Analytics Data**</a>
+- <a href="https://docs.appdynamics.com/appd/23.x/latest/en/analytics/using-analytics-data/visualize-analytics-data" target="_blank">**Visualize Analytics Data**</a>
 
 
 ## View the Loan Approval Modernization Comparison
@@ -63,6 +63,10 @@ Let's look at the side by side comparison of the loan approval process, the befo
 **1 .**  Click on the **Dashboards &#38; Reports** option on the top menu.
 
 **2 .**  Double-click on the **Loan Approval Modernization Comparison** dashboard to open it.
+
+{{% notice info %}}
+If you don't see the dashboard in the list then type in the word **loan** in the search box on the top right of the screen and it should then appear in the list.
+{{% /notice %}}
 
 ![image](/images/modernize/biz_iq_open_loans_dash.png)
 

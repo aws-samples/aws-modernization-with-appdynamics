@@ -12,7 +12,7 @@ weight = 2
 Once the setup utility has finished, you can find your login credentials to your AppDynamics Controller by using the commands below:
 
 ```
-cd /home/ec2-user/environment
+cd /home/ec2-user/environment/modernization_workshop
 
 cat workshop-user-details.txt
 ```
@@ -37,7 +37,7 @@ The account and username are two distinct fields that are used as part of loggin
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 
- We'll start the **assessment of the pre-modernized version** of the **AD Financial web front-end**.
+ We'll start the **assessment of the pre-modernized version** of the **AD Financial application**.
 
 
 <!---

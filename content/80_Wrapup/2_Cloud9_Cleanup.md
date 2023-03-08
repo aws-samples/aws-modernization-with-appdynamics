@@ -2,6 +2,7 @@
 title = "Cloud9 Cleanup"
 chapter = false
 weight = 2
+hidden = false
 +++
 
 {{% notice warning %}}

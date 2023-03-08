@@ -20,7 +20,7 @@ Let's get started by navigating to the Cluster Agent dashboard.
 
 **2 .**  Click on the **Clusters** option on the left menu.
 
-**2 .**  Double-click on the cluster named like **&lt;your_lab_user_name&gt;-AD-Fin-PostMod**
+**2 .**  Double-click on the cluster name that starts like this **adfin-post-mod-&lt;your_lab_user_name&gt;-eks-appdynamics-cluster-agent**
 
 ![image](/images/operate/cluster_agent_00.png)
 

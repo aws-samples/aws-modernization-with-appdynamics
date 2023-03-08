@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: account-management
+  labels:
+    framework: java
+    tiername: AccountManagement
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ad-financial
+      run: account-management
+  template:
+    metadata:
+      labels:
+        app: ad-financial
+        run: account-management
+    spec:
+      serviceAccountName: appd-app-services
+      containers:
+        - name: account-management
+          image: public.ecr.aws/w3n5a5m8/adfinmod_java_services_post:latest
+          envFrom:
+            - configMapRef:
+                name: appd-app-config
+          env:
+            - name: HOST_NAME
+              value: "account-management"
+            - name: GRAPH_FILE
+              value: /app-graph.json
+            - name: APPDYNAMICS_AGENT_TIER_NAME
+              value: AccountManagement              
+            - name: ADWRKSHP_TIER_SRVC_NAME
+              value: AccountManagement
+            - name: APPDYNAMICS_JAVA_AGENT_REUSE_NODE_NAME
+              value: "true"
+            - name: APPDYNAMICS_JAVA_AGENT_REUSE_NODE_NAME_PREFIX
+              value: AccountManagement_Node
+            - name: ENABLE_IRP
+              value: "true"
+
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: account-management
+  labels:
+    app: ad-financial
+    run: account-management
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+  selector:
+    run: account-management
+---

@@ -2,6 +2,7 @@
 title = "AD Financial Web UI"
 chapter = false
 weight = 1
+hidden = true
 +++
 
 ![image](/images/mobilize/ad_team_architect.png)

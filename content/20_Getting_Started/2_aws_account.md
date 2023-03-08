@@ -2,6 +2,7 @@
 title = "AWS Account"
 chapter = false
 weight = 2
+hidden = false
 +++
 
 {{% notice warning %}}
