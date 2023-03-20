@@ -89,30 +89,12 @@ Specifically, how can the operations team:
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 
+Let's get started by **logging into** your **Cloud9** lab instance.
+
+<!--
+
+_CUSTOM_EDITS_
+
 Let's get started by **setting up the prerequisites** in your **AWS environment**.
 
-
-<!-- **Distributed Architectures:** Microservices, containers, Kubernetes and the use of multiple AWS Availability Zones have created a more expansive and richer IT landscape.
-
-- **Additional Dependencies:** APIs that connect to third-party services outside of the organization may not always perform as expected. The customer does not care who is at fault, they simply want a frictionless engagement with the applications.
-
-- **Faster Release Cycles:** Release frequencies have shifted - to monthly, weekly, daily, or even hourly deployments. No matter how minor some releases may seem, they all have the potential to impact the customer experience.
-
-Historically, monitoring has reflected the departmental nature of Development and IT Operations teams, who each used a tool for their area of responsibility, such as:
-
-- Network
-- Database
-- Web
-- Mobile
-- Server
-
-Proliferation of these tools has often led to:
-
-- **Finger Pointing:** More time spent proving innocence vs. collaborating, results in slower Root Cause Analysis (RCA) and poor team collaboration.
-
-- **Lack of Visibility:** No insight into end-to-end execution times, which causes “watermelon KPIs,” i.e. looks green, but users still struggle.
-
-- **Suboptimal Prioritization:** Teams are unaware of the true business impact of what has occurred. 
-
-
-The operations team needs to keep their end users happy and maximize revenue. AppDynamics helps ensure optimal user experience by measuring key performance metrics and reporting on any deviations in real-time. However, AppDynamics goes beyond alerts by pinpointing where an issue is occurring and providing AI-driven remediation recommendations. This capability is especially important to proactively identify potential issues before they result in degraded customer experiences and potential lost business.  -->
+-->

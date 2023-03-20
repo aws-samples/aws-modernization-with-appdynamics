@@ -17,7 +17,9 @@ During the **modernization journey thus far**, we've **covered many perspectives
 
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #efc100;"><i class='fas fa-check-square'></i></span>&nbsp; **Business Transactions**
 
+<!--
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #efc100;"><i class='fas fa-check-square'></i></span>&nbsp; **Servers and Containers**
+-->
 
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #efc100;"><i class='fas fa-check-square'></i></span>&nbsp; **Databases**
 
@@ -56,4 +58,4 @@ Now let's take a look at **some of the other valuable assets** within the AppDyn
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 
-Now it's time to deploy the **Cluster Agent** to the EKS cluster.
+In the next section we’ll look at how you can **unlock the power of machine learning and AI** to deliver world-class user experience **with AppDynamics Cognition Engine**.

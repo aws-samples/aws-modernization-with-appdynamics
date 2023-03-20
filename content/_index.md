@@ -39,6 +39,11 @@ weight: 1
 ##### &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Operations engineers
 ##### &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; Infrastructure teams 
 
+<!--
+
+_CUSTOM_EDITS_
+
+
 ## Workshop Structure
 
 ##### &nbsp; The workshop is divided into the sections listed below.  Plan on 2.5 hours to complete the course.
@@ -51,4 +56,4 @@ weight: 1
 ##### &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; **Workshop exercises** ***(90 minutes)*** - Divided into three modules: mobilize, modernize, operate
 ##### &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4e3eb1;"><i class='fas fa-certificate fa-xs'></i></span>&nbsp; **Cleanup Resources** ***(10 minutes)*** - Run a script to tear down workshop resources  
   
-
+-->

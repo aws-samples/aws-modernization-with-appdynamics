@@ -2,6 +2,7 @@
 title = "Deployment"
 chapter = false
 weight = 1
+hidden = true
 +++
 
 ![image](/images/operate/ad_team_cloudops.png)
@@ -59,7 +60,7 @@ The image below shows what the output looks like for Cluster Agent deployment.
 ![image](/images/operate/kube-deploy-01.png)
 
 
-You can read more about deploying the Cluster Agent <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/monitor-kubernetes-with-the-cluster-agent/install-the-cluster-agent" target="_blank">**here**</a>
+You can read more about deploying the Cluster Agent <a href="https://docs.appdynamics.com/appd/23.x/latest/en/infrastructure-visibility/monitor-kubernetes-with-the-cluster-agent/install-the-cluster-agent" target="_blank">**here**</a>
 
 
 ## Next <i class='fas fa-cog fa-spin'></i>

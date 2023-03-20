@@ -19,9 +19,9 @@ weight = 3
 
 Once you have logged into the AppDynamics controller, you should see the home page. Let's start by finding the pre-modernized version of the AD Financial BRUM (**Browser Real User Monitoring**) application and open it using the steps below.
 
-**1 .**  Click on the **Home** option on the top menu.
+**1 .**  Click on the **User Experience** option on the top menu.
 
-- In the **User Experience** tile, you should see the application named like **&lt;your_lab_user_name&gt;-AD-Fin-PreMod-Web**
+- In the list of **Browser Apps** you should see the application named like **adfin-pre-mod-&lt;your_lab_user_name&gt;-web**
 
 **2 .**  Click on the application name to open the Overview Dashboard for the application.
 
@@ -41,16 +41,16 @@ The Browser App Overview dashboard displays a set of configurable widgets.
 - Top 10 Browsers and Devices
 - Top 5 Pages and Countries by Total Requests
 
-You can read more about the Browser Application Overview dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard" target="_blank">**here**</a>
+You can read more about the Browser Application Overview dashboard <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard" target="_blank">**here**</a>
 
 **2 .**  Take a moment to explore the:
 
 - **Geo Dashboard**
-  - You can read more about the Browser Application Geo dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#BrowserAppDashboard-geoGeoTab" target="_blank">**here**</a>
+  - You can read more about the Browser Application Geo dashboard <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#BrowserAppDashboard-geo" target="_blank">**here**</a>
 - **Browser Snapshots**
-  - You can read more about the Browser Snapshots <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots/page-snapshots" target="_blank">**here**</a>
+  - You can read more about the Browser Snapshots <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard/browser-snapshots/page-snapshots" target="_blank">**here**</a>
 - **Usage Stats**
-  - You can read more about the Browser Application Usage Stats dashboard <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#BrowserAppDashboard-usagestatsUsageStats" target="_blank">**here**</a>
+  - You can read more about the Browser Application Usage Stats dashboard <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-app-dashboard#id-.BrowserAppDashboardv23.1-usagestatsUsageStats" target="_blank">**here**</a>
 
 
 **3 .**  Click on the **Pages & AJAX Requests** on the left to get a **breakdown of metrics for each web page including End User Response Time**.
@@ -78,7 +78,7 @@ The Base Page Dashboard shows you how a web page has been performing over time, 
 
 **1 .**  At the top of the Base Page dashboard you will see key performance indicators, End User Response Time, Load, Cache Hits, and Page Views with JS errors across the period selected in the timeframe dropdown from the upper-right side of the Controller UI. Cache Hits indicates resources fetched from a cache, such as a CDN, rather than from the source.
 
-**2 .**  In the Timing Breakdown section you will see a waterfall graph that displays the average times needed for each aspect of the page load process. For more information on what each of the metrics measures, hover over its name on the left. A popup appears with a definition. For more detailed information, see <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/browser-rum-metrics" target="_blank">**Browser RUM Metrics**</a>
+**2 .**  In the Timing Breakdown section you will see a waterfall graph that displays the average times needed for each aspect of the page load process. For more information on what each of the metrics measures, hover over its name on the left. A popup appears with a definition. For more detailed information, see <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/browser-rum-metrics" target="_blank">**Browser RUM Metrics**</a>
 
 ![image](/images/mobilize/brum_app_03.png)
 
@@ -115,13 +115,13 @@ You can see that the browser snapshot shows the same waterfall timing breakdown 
 
 ![image](/images/mobilize/brum_app_06.png)
 
-**1 .**  Use the scroll bar on the right to scroll down until you see the associated **Server Snapshot**.
+**1 .**  Use the scroll bar on the right to scroll down until you see the associated **Transaction Snapshot**.
 
-**2 .**  Double-click on the server snapshot to follow the path of the user request to the backend to see why this web page request had such a high response time.
+**2 .**  Double-click on the transaction snapshot to follow the path of the user request to the backend to see why this web page request had such a high response time.
 
 ![image](/images/mobilize/brum_app_07.png)
 
-You can drill down through the entire path of the transaction with the server side snapshot to quickly find root cause.  We'll explore server snapshots in more detail when we cover the upcoming section on Business Transactions.
+You can drill down through the entire path of the transaction with the server side transaction snapshot to quickly find root cause.  We'll explore server side transaction snapshots in more detail when we cover the upcoming section on Business Transactions.
 
 ![image](/images/mobilize/brum_app_08.png)
 

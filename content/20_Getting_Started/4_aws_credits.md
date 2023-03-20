@@ -2,6 +2,7 @@
 title = "AWS Credit Request"
 chapter = false
 weight = 4
+hidden = false
 +++
 
 <table class="credit" style="width:100%">

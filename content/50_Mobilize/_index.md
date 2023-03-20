@@ -72,7 +72,7 @@ It provides you **much more than just "an inventory list"**, such as:
 
 ## Agent Configuration
 
-Now let's look at the different AppDynamics agents that have been applied to the pre-modernized application and review how they were deployed and configured.  For some of the agents, we have used pre-packaged Docker images and for others, we have downloaded the agent binaries.  You can read more about the different agent download options <a href="https://docs.appdynamics.com/latest/en/appdynamics-essentials/getting-started/download-appdynamics-software" target="_blank">**here**</a>.
+Now let's look at the different AppDynamics agents that have been applied to the pre-modernized application and review how they were deployed and configured.  For some of the agents, we have used pre-packaged Docker images and for others, we have downloaded the agent binaries.  You can read more about the different agent download options <a href="https://docs.appdynamics.com/appd/23.x/latest/en/appdynamics-essentials/getting-started/download-appdynamics-software" target="_blank">**here**</a>.
 
 Most types of AppDynamics agents require the five connection properties seen below.  The setup script you executed previously in the workshop setup section, auto-populated the agent to controller configuration properties for you.  
 
@@ -95,11 +95,11 @@ Most types of AppDynamics agents require the five connection properties seen bel
 Let's take a **look at the *"application.env"* file for the Docker application** that has the agent to controller connection properties defined by using the commands below:
 
 ```
-cd /opt/appdynamics/workshopuser/pre-mod-docker
+cd /home/ec2-user/environment/modernization_workshop/applications/pre-modernization
 
 cat -n application.env
 ```
-You should see the five controller connection properties and their values defined.  You can read more about the Agent to Controller Connection properties <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/agent-to-controller-connections" target="_blank">**here**</a>
+You should see the five controller connection properties and their values defined.  You can read more about the Agent to Controller Connection properties <a href="https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/install-app-server-agents/agent-to-controller-connections" target="_blank">**here**</a>
 
 <br>
 
@@ -110,7 +110,7 @@ In the *"application.env"* file you'll see the *"APPDYNAMICS_AGENT_APPLICATION_N
 Let's take a **look at the "docker-compose.yaml" file** that is used to define the containers/services that comprise the application.  
 
 ```
-cd /opt/appdynamics/workshopuser/pre-mod-docker
+cd /home/ec2-user/environment/modernization_workshop/applications/pre-modernization
 
 cat -n docker-compose.yaml
 ```
@@ -146,7 +146,7 @@ Scroll down the file until you get to **line 56**.  Here we see the entire **def
 
 You can examine the other services in the *docker-compose.yaml* file to see the specific definitions that include the Java Agent in the exact manner as described above, with the exception of Tier and Node name differences.
 
-You can read more about building the Java Agent into your own Docker Image <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#InstalltheJavaAgentinContainers-dockerfile" target="_blank">**here**</a>
+You can read more about building the Java Agent into your own Docker Image <a href="https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers" target="_blank">**here**</a>
 
 <br>
 
@@ -167,7 +167,7 @@ The Server Visibility Agent used with a Docker Compose application **is similar 
 If needed, run the commands below to view the docker-compose.yaml file again:
 
 ```
-cd /opt/appdynamics/workshopuser/pre-mod-docker
+cd /home/ec2-user/environment/modernization_workshop/applications/pre-modernization
 
 cat -n docker-compose.yaml
 ```
@@ -213,11 +213,20 @@ Once the database agent is running with a specific name, its name should appear 
 
 You can see that we have used the "root" username and password to connect to the database and monitor it.  The recommended practice is to create a specific database user in the database and apply specific permissions to it for monitoring purposes.
 
-You can read more about deploying the database agent and configuring collectors <a href="https://docs.appdynamics.com/latest/en/database-visibility/administer-the-database-agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/latest/en/database-visibility/add-database-collectors" target="_blank">**here**</a>
+You can read more about deploying the database agent and configuring collectors <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/administer-the-database-agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/add-database-collectors" target="_blank">**here**</a>
 
 ![image](/images/mobilize/agent-conf-07.png)
 
 <br>
+
+
+<!--
+
+_CUSTOM_EDITS_
+
+This was commented out to simplify the instructor led workshop where all the setup was done prior to the start of the workshop
+
+
 
 ## Browser JavaScript Agent
 
@@ -265,22 +274,12 @@ You can use your browser developer tools to validate that the JavaScript Agent i
 
 ![image](/images/mobilize/agent-conf-06.png)
 
-You can read more about configuring the JavaScript Agent and the different injection methods <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/configure-the-javascript-agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/inject-the-javascript-agent" target="_blank">**here**</a>.
-
-<!--
-
-{{% notice info %}}
-**Optional:**  You can explore the artifacts that were utilized to deploy the application and AppDynamics agents associated with this section by navigating to the following directories listed below that are located on your Cloud9 instance: 
-{{% /notice %}}
-
-```
-/home/ec2-user/environment/deployment
-
-/home/ec2-user/environment/deployment/pre-mod-docker
-```
--->
+You can read more about configuring the JavaScript Agent and the different injection methods <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/configure-the-javascript-agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/inject-the-javascript-agent" target="_blank">**here**</a>.
 
 <br>
+
+-->
+
 
 ## Next <i class='fas fa-cog fa-spin'></i>
 

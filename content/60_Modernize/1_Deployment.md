@@ -17,9 +17,9 @@ In this section you'll be performing the following setup and deployment steps:
 Let's start by looking at the script that creates the EKS cluster using the commands below in your Cloud9 terminal:
 
 ```
-cd /opt/appdynamics/workshopuser
+cd /home/ec2-user/environment/modernization_workshop
 
-cat -n deployEksCluster.sh
+cat -n create_eks_cluster.sh
 ```
 
 The script calls <a href="https://eksctl.io" target="_blank">**eksctl**</a> passing the **cluster.yaml** file to provide the cluster definition.
@@ -27,7 +27,7 @@ The script calls <a href="https://eksctl.io" target="_blank">**eksctl**</a> pass
 Take a quick look at the **cluster.yaml** file using the commands below:
 
 ```
-cd /opt/appdynamics/workshopuser/post-mod-kube-cluster
+cd /home/ec2-user/environment/modernization_workshop/applications/post-modernization
 
 cat -n cluster.yaml
 ```
@@ -56,9 +56,9 @@ Go ahead and create the EKS cluster using the commands below:
  - cluster creation takes ~16 minutes to finish so please be patient and let the process complete
 
 ```
-cd /opt/appdynamics/workshopuser
+cd /home/ec2-user/environment/modernization_workshop
 
-./deployEksCluster.sh
+./create_eks_cluster.sh
 ```
 
 The image below shows what the output looks like for the EKS cluster creation. 
@@ -70,20 +70,94 @@ The image below shows what the output looks like for the EKS cluster creation.
 ## Deploy the Application to EKS
 
 Now that the EKS cluster is up and running, use the commands below to deploy the modernized application to EKS:
- - deployment and initialization takes ~4 minutes to finish
+ - deployment and initialization takes ~3 minutes to finish
 
 ```
-cd /opt/appdynamics/workshopuser
+cd /home/ec2-user/environment/modernization_workshop
 
-./deployEksApplication.sh
+./deploy_eks_application.sh
 ```
+<!--
+{{% notice warning %}}
+If the **deploy_eks_application.sh** hangs or gets stuck, you can CTRL+C (Windows) or CMD+C (Mac) to exit the script and re-run it.
+{{% /notice %}}
+-->
 
 The image below shows what the output looks like for the application deployment and initialization.
 
 ![image](/images/modernize/kube-deploy-02.png)
 
+<br>
 
-Let's take a look at how the application and the Java APM agent were configured for EKS deployment.  We've used the **config-map.yaml** file to define the properties needed by the agent to connect to the controller.  The setup script you executed in the workshop setup section, auto-populated the agent to controller configuration properties for you just like the **application.env** file used for the Docker Compose application.  You can read more about the Agent to Controller Connection properties <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/agent-to-controller-connections" target="_blank">**here**</a>
+## Deploy AppDynamics Agents
+
+Use the commands below to **deploy the AppDynamics agents** to the EKS Kubernetes cluster.
+
+```bash
+cd /home/ec2-user/environment/modernization_workshop
+
+./deploy_appdynamics_agents.sh
+```
+
+The output should look like the image below.
+
+![image](/images/modernize/kube-conf-02.png)
+
+
+### What AppDynamics agents were deployed and how?
+
+Though there are several different ways to deploy these agents, we've used the <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/monitor-kubernetes-with-the-cluster-agent/install-the-cluster-agent/install-the-cluster-agent-with-helm-charts" target="_blank">**AppDynamics Helm Chart**</a> that simplified the deployment of agents to the Kubernetes clusters.
+
+Below is the list of agents deployed by the Helm chart:
+
+- <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/monitor-kubernetes-with-the-cluster-agent/overview-of-cluster-monitoring" target="_blank">**Cluster Agent**</a>
+- <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/java-agent" target="_blank">**Java APM Agent**</a>
+- <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/server-visibility" target="_blank">**Server Visibility Agent**</a>
+- <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/network-visibility" target="_blank">**Network Visibility Agent**</a>
+- <a href="https://docs.appdynamics.com/latest/en/application-security-monitoring" target="_blank">**Secure Application Agent**</a>
+
+
+### How is the Helm chart configured?
+
+In our deployment we are overriding the <a href="https://github.com/CiscoDevNet/appdynamics-charts/blob/master/cluster-agent/values.yaml" target="_blank">**helm chart default *values.yaml* file**</a> to provide the specific configuration for our environment.
+
+Use the command below in your Cloud9 terminal to view the template file used to generate the final version of the values.yaml file that is used in our deployment.
+
+```bash
+cat -n /home/ec2-user/environment/modernization_workshop/applications/post-modernization/clusteragent/values-ca1.yaml
+```
+
+- On **line 1 and line 2** we are specifying that we want to **deploy the Cluster Agent and the Server Visibility Agent**.
+- On **lines 6 through 11** we- On **lines 6 through 11** we will provide the <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/agent-to-controller-connections" target="_blank">**connection details**</a> to the **AppDynamics Controller**.
+- On **lines 8 and 9** the username and password for **an AppDynamics Controller user with elevated privilages** are required only if you are configuring **Auto-Instrumentation of APM Agents** which we'll look at in the next section. 
+
+![image](/images/modernize/kube-conf-03.png)
+
+- On **line 15** we are **specifying the namespace(s)** we want the **Cluster Agent to monitor**.
+- On **lines 17 through 33** we see the <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/monitor-kubernetes-with-the-cluster-agent/auto-instrument-applications-with-the-cluster-agent" target="_blank">**configuration**</a> for the <a href="https://docs.appdynamics.com/latest/en/infrastructure-visibility/monitor-kubernetes-with-the-cluster-agent/auto-instrument-applications-with-the-cluster-agent" target="_blank">**Auto-Instrumentation of APM Agents**</a>
+- In this case we have **one instrumentation rule** defined for the **Java APM Agent** to label match on deployments with the **framework: java** label, as seen on **lines 28 and 29**
+- Also, take note of **lines 21 through 24** where we are telling the auto-instrumentation to use the Application Name we have defined here and to use the Tier Names that are set for each service deployment in their **Kubernetes deployment Yaml file** which we will look at an example of next
+
+![image](/images/modernize/kube-conf-04.png)
+
+
+Now let's take a look at the Kubernetes deployment Yaml file for the **AccountManagement** service deployment to see how we used the label match from the **Auto-Instrumentation section** of the **values-ca1.yaml** used to deploy the AppDynamics agents, using the command below.
+
+```bash
+cat -n /home/ec2-user/environment/modernization_workshop/applications/post-modernization/application/account-management.yaml
+```
+
+- On **line 6** we are providing the label that matches to **line 29 in the values-ca1.yaml file** that tells the Cluster Agent to auto-instrument this deployment.
+- On **line 7** we are providing the label that matches to **line 24 in the values-ca1.yaml file** that tells the Java Agent to use the Tier Name of **AccountManagenment** for this deployment.
+- On **lines 24 through 26** we are referencing the **modernization_workshop/applications/post-modernization/application/config-map.yaml** for some of the required environment variables for the application
+- On **lines 27 through 41** we are setting some required environment variables for this specific deployment/service in an in-line fashion
+
+![image](/images/modernize/kube-conf-05.png)
+
+
+
+<!--
+Let's take a look at how the application and the Java APM agent were configured for EKS deployment.  We've used the **config-map.yaml** file to define the properties needed by the agent to connect to the controller.  The setup script you executed in the workshop setup section, auto-populated the agent to controller configuration properties for you just like the **application.env** file used for the Docker Compose application.  You can read more about the Agent to Controller Connection properties <a href="https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/install-app-server-agents/agent-to-controller-connections" target="_blank">**here**</a>
 
 Take a look at the **config-map.yaml** file using the commands below:
 
@@ -140,10 +214,10 @@ Starting on **line 26** we see the first part of the **definition for the *"acco
 ![image](/images/modernize/kube-conf-05.png)
 
 
-You can read more about using the Java Agent with Init Containers <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#InstalltheJavaAgentinContainers-init" target="_blank">**here**</a>
+You can read more about using the Java Agent with Init Containers <a href="https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#id-.InstalltheJavaAgentinContainersv23.1-init" target="_blank">**here**</a>
 
 
-You can read more about building the Java Agent into your own Docker Image <a href="https://docs.appdynamics.com/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#InstalltheJavaAgentinContainers-dockerfile" target="_blank">**here**</a>
+You can read more about building the Java Agent into your own Docker Image <a href="https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/install-app-server-agents/java-agent/install-the-java-agent/install-the-java-agent-in-containers#id-.InstalltheJavaAgentinContainersv23.1-dockerfile" target="_blank">**here**</a>
 
 <br>
 
@@ -158,6 +232,8 @@ cd /opt/appdynamics/workshopuser
 ```
 
 The image below shows what the output looks like for the Server Agent deployment.
+
+If you see any warnings or an error in the output, just ignore them.
 
 ![image](/images/modernize/kube-deploy-03.png)
 
@@ -194,6 +270,8 @@ We are defining the Server Visibility Agent container and referencing a pre-buil
 
 You can read more about building the Server Visibility Agent into your own Docker Container Image <a href="https://github.com/Appdynamics/appdynamics-docker-images/tree/master/appd-machine-agent-analytics" target="_blank">**here**</a>
 
+-->
+
 <br>
 
 ## Database Visibility Agent
@@ -220,7 +298,7 @@ Once the database agent is running with a specific name, its name should appear 
 
 You can see that we have used the "root" username and password to connect to the database and monitor it.  The recommended practice is to create a specific database user in the database and apply specific permissions to it for monitoring purposes.
 
-You can read more about deploying the database agent and configuring collectors <a href="https://docs.appdynamics.com/latest/en/database-visibility/administer-the-database-agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/latest/en/database-visibility/add-database-collectors" target="_blank">**here**</a>
+You can read more about deploying the database agent and configuring collectors <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/administer-the-database-agent" target="_blank">**here**</a> and <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/add-database-collectors" target="_blank">**here**</a>
 
 ![image](/images/modernize/kube-conf-07.png)
 

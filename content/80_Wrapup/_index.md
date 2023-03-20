@@ -45,6 +45,12 @@ weight = 80
 
 <br>
 
+<!--
+
+_CUSTOM_EDITS_
+	
 ## Workshop Cleanup <i class='fas fa-cog fa-spin'></i>
 
 Move to the next section for the steps to remove all workshop resources including AWS resources.
+
+-->

@@ -17,9 +17,9 @@ In order to prevent charges to your AWS account, we recommend cleaning up the in
 <span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Just so you understand ahead of time, you can easily clean up all the resources that get created by the setup utility by using the commands below:
 
 ```
-cd /home/ec2-user/environment
+cd /home/ec2-user/environment/modernization_workshop
 
-./teardownWorkshop.sh 
+./teardown_workshop.sh 
 ```
 
 <br>
@@ -36,17 +36,16 @@ Now that you've got all the prerequisites out of the way, you can kick off the i
 cd /home/ec2-user/environment
 ```
 
-<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Download the setup script using the following command:
+<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Clone the GitHub repository for the workshop using the following command:
 
 ```
-curl --silent -L https://raw.githubusercontent.com/Appdynamics/appd_aws_observability_lab/main/setupWorkshop.sh -o ./setupWorkshop.sh
+git clone https://github.com/Appdynamics/appd_aws_observability_lab.git modernization_workshop
 ```
 
-<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use the following command to make the script executable:
-
+<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Change directory to where the repository was cloned using the following command:
 
 ```
-chmod +x setupWorkshop.sh
+cd /home/ec2-user/environment/modernization_workshop
 ```
 
 <span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use five (5) letters of your first, and or, your last name to create your unique workshop user name using the command below:
@@ -60,7 +59,7 @@ export appd_workshop_user=<YOUR USER NAME>
 <span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Use the command below to execute the setup script:
 
 ```
-./setupWorkshop.sh
+./setup_workshop.sh
 ```
 
 
@@ -133,11 +132,7 @@ There will be some additional setup steps in the following sections listed below
 
  - Create the EKS Cluster
  - Deploy the Application to EKS
- - Deploy the Server Agent to EKS
-
-<span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Operate Section
-
- - Deploy the Cluster Agent to EKS
+ - Deploy the AppDynamics Agents to EKS
 
 ## What the final architecture will look like
 

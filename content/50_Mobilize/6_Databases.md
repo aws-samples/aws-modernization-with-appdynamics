@@ -35,7 +35,8 @@ Let's start by finding the pre-modernized MySQL Database and open it to investig
 
 **1 .**  Click on the **Databases** option on the top menu.
 
-- In the list of datbases, you should see the database named like **&lt;your_lab_user_name&gt;-AD-Fin-PreMod**
+- In the list of datbases, you should see the database named like **adfin-pre-mod-&lt;your_lab_user_name&gt;-mysql**
+- Make sure **you've selected your database** based on your lab user name
 
 **2 .**  Double-click on the database name to drill into main dashboard for the database.
 
@@ -56,7 +57,7 @@ The native MySQL database used in the pre-modern version of the application is s
 
 **5 .**  Hover over the labels for each wait state to see a more detailed description
 
-You can read more about the Database Overview dashboard <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-dashboard" target="_blank">**here**</a>
+You can read more about the Database Overview dashboard <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-dashboard" target="_blank">**here**</a>
 
 ![image](/images/mobilize/database_02.png)
 
@@ -69,7 +70,7 @@ This report displays time-series data on Wait Events (states) within the databas
 
 The wait states consuming the most time may point to performance bottlenecks. For example, db file sequential reads may be caused by segment header contention on indexes or by disk contention.
 
-You can read more about the Database Activity Reports <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-activity-window" target="_blank">**here**</a>
+You can read more about the Database Activity Reports <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-activity-window" target="_blank">**here**</a>
 
 ![image](/images/mobilize/database_03.png)
 
@@ -88,7 +89,7 @@ The Queries window displays the SQL statements and stored procedures that consum
 
 **5 .**  Click on the "View Query Details" button to drill into the query details
 
-You can read more about the Database Queries dashboard <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window" target="_blank">**here**</a>
+You can read more about the Database Queries dashboard <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window" target="_blank">**here**</a>
 
 ![image](/images/mobilize/database_04.png)
 
@@ -103,7 +104,7 @@ Once you have identified the statements on the Database Queries window that are 
 
 **3 .**  Click on the **Execution Plan** option to see the query execution plan window.
 
-You can read more about the Database Query Details dashboard <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window/database-query-details-window" target="_blank">**here**</a>
+You can read more about the Database Query Details dashboard <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window/database-query-details-window" target="_blank">**here**</a>
 
 ![image](/images/mobilize/database_05.png)
 
@@ -123,7 +124,7 @@ The Database Query Execution Plan window can help you to determine the most effi
 
 **5 .**  Click on the **Explain** button if you're not seeing the explain plan.
 
-You can read more about the Database Query Execution Plan view <a href="https://docs.appdynamics.com/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window/database-query-execution-plan-window" target="_blank">**here**</a>
+You can read more about the Database Query Execution Plan view <a href="https://docs.appdynamics.com/appd/23.x/latest/en/database-visibility/monitor-databases-and-database-servers/monitor-database-performance/database-queries-window/database-query-execution-plan-window" target="_blank">**here**</a>
 
 ![image](/images/mobilize/database_06.png)
 

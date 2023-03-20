@@ -2,6 +2,7 @@
 title = "Workshop Cleanup"
 chapter = false
 weight = 1
+hidden = false
 +++
 
 <br>
@@ -21,9 +22,9 @@ In order to prevent charges to your AWS account, we recommend cleaning up the in
 <span style="color: #4e3eb1;"><i class='fas fa-circle fa-sm'></i></span> Execute the commands below to cleanup all workshop resources:
 
 ```
-cd /home/ec2-user/environment
+cd /home/ec2-user/environment/modernization_workshop
 
-./teardownWorkshop.sh 
+./teardown_workshop.sh 
 ```
 
 {{% notice info %}}

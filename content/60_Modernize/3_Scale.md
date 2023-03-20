@@ -6,7 +6,7 @@ weight = 3
 
 ![image](/images/modernize/ad_team_developer.png)
 
-
+<!--
 ## Servers and Containers - EKS
 
 When Nathan and his team selected EKS as the container orchestration engine of choice, they chose to create a multi-node cluster to scale up the service tiers that needed improved performance and greater throughput. 
@@ -33,6 +33,9 @@ Each of the servers is hosting a container in support of the tiers that have bee
 
 <br>
 
+-->
+
+
 ## Remote Services - S3
 
 In addition to the flow map reflecting all of the changes in the real time topology of the application, we can view Remote Services to show the detailed metrics of the calls to the new secure storage solution, S3. 
@@ -41,7 +44,7 @@ In addition to the flow map reflecting all of the changes in the real time topol
 
 **2 .**  Notice the sub-second response time for all the S3 calls.
 
-You can read more about Remote Services <a href="https://docs.appdynamics.com/latest/en/application-monitoring/remote-services" target="_blank">**here**</a>
+You can read more about Remote Services <a href="https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/remote-services" target="_blank">**here**</a>
 
 ![image](/images/modernize/remote_services_00.png)
 
@@ -51,7 +54,7 @@ You can read more about Remote Services <a href="https://docs.appdynamics.com/la
 
 The native MySQL database used in the pre-modernized version of the application was straining to keep up with the demand of the application load.  Let's take a look at how much better the new AWS RDS MySQL database is performing.
 
-**1 .**  Navigate to the database named like **&lt;your_lab_user_name&gt;-AD-Fin-PostMod**
+**1 .**  Navigate to the database named like **adfin-post-mod-&lt;your_lab_user_name&gt;-mysql**
 
 **2 .**  Click on the colored health status circle to see details of the server health
 

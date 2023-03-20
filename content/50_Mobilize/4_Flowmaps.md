@@ -12,7 +12,7 @@ weight = 4
 
 Let's start by finding the pre-modernized version of the AD Financial APM (**App Performance Monitoring**) application and open it to investigate the flow map.
 
-Click on the **Applications** tab on the top menu, you should see the application named like **&lt;your_lab_user_name&gt;-AD-Fin-PreMod**
+Click on the **Applications** tab on the top menu, you should see the application named like **adfin-pre-mod-&lt;your_lab_user_name&gt;**
 
 Click on the application name to drill into the flow map view for the application.
 
@@ -132,7 +132,7 @@ Once you're in the **Tier level Flow Map**, you can see that the view has change
 
 **4 .**  You can explore the **Node level Flow Map** by drilling in here.
 
-You can read more about Flow Maps <a href="https://docs.appdynamics.com/latest/en/application-monitoring/business-applications/flow-maps" target="_blank">**here**</a>
+You can read more about Flow Maps <a href="https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/business-applications/flow-maps" target="_blank">**here**</a>
 
 ![image](/images/mobilize/flowmap_topology_04.png)
 

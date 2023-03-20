@@ -14,9 +14,7 @@ Once the new architectural components were selected, Nathan, the architect we me
 
 Let's start by finding the modernized version of the AD Financial APM (**App Performance Monitoring**) application and open it to investigate the flow map.
 
-**1 .**  Click on the **Home** option on the top menu.
-
-- In the **Applications** tile, you should see the application named like **&lt;your_lab_user_name&gt;-AD-Fin-PostMod**
+**1 .**  Click on the **Applications** tab on the top menu, you should see the application named like **adfin-post-mod-&lt;your_lab_user_name&gt;**
 
 **2 .**  Click on the application name to drill into the flow map view for the application.
 
@@ -34,6 +32,18 @@ You can now see that AppDynamics shows an updated flow map that reflects the new
 
 ![image](/images/modernize/flowmap_00.png)
 
+{{% notice info %}}
+If you see any of the services in the application showing up as HTTP instead of a Tier as depicted in the image below, then use the commands, shown below the image, to re-deploy the EKS application and this should fix the issue. 
+{{% /notice %}}
+
+![image](/images/modernize/redeploy-eks-app-00.png)
+
+
+```
+cd /home/ec2-user/environment/modernization_workshop
+
+./redeploy_eks_application.sh
+```
 
 <br>
 
@@ -65,9 +75,9 @@ There has now been significant improvement in the average response times of thes
 
 Next let's go to the post-modernized version of the AD Financial BRUM (**Browser Real User Monitoring**) application and open it using the steps below.
 
-**1 .**  Click on the **Home** option on the top menu.
+**1 .**  Click on the **User Experience** option on the top menu.
 
-- In the **User Experience** tile, you should see the application named like **&lt;your_lab_user_name&gt;-AD-Fin-PostMod-Web**
+- In the list of **Browser Apps** you should see the application named like **adfin-post-mod-&lt;your_lab_user_name&gt;-web**
 
 **2 .**  Click on the application name to open the Overview Dashboard for the application.
 
@@ -89,7 +99,7 @@ We can observe the performance increase seen for the pages associated with loan 
 
 From here you can understand the breakdown of the End User Response Time for this page.  The waterfall graph shown below displays the average times for the time frame selected for each aspect of the page load process. For more information on each of the metric measurements, hover over its name on the left. A popup appears with a definition of the metric.
 
-You can read more about the Browser Page Timing Breakdown <a href="https://docs.appdynamics.com/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/browser-rum-metrics" target="_blank">**here**</a>
+You can read more about the Browser Page Timing Breakdown <a href="https://docs.appdynamics.com/appd/23.x/latest/en/end-user-monitoring/browser-monitoring/browser-real-user-monitoring/browser-rum-metrics" target="_blank">**here**</a>
 
 ![image](/images/modernize/brum_app_01.png)
 

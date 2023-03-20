@@ -1,0 +1,50 @@
+installClusterAgent: true
+installInfraViz: true
+
+# AppDynamics controller info
+controllerInfo:
+  url: https://channel.saas.appdynamics.com:443
+  account: channel
+  username: adminuser
+  password: adminuserpass
+  accessKey: df4d049a-9f78-4e95-a8ad-9261a53a5954
+  globalAccount: channel_7y3d81dc-8fca-3274-gj7d-4629ssw2076p
+  
+# Cluster agent config
+clusterAgent:
+  nsToMonitorRegex: default
+
+instrumentationConfig:
+  enabled: true
+  instrumentationMethod: env
+  nsToInstrumentRegex: default
+  defaultAppName: adfin-post-mod-jrschne906
+  appNameStrategy: manual
+  tierNameStrategy: label
+  tierNameLabel: tiername
+  instrumentationRules:
+    - namespaceRegex: default
+      language: java
+      labelMatch:
+        - framework: java
+      imageInfo:
+        image: docker.io/appdynamics/java-agent:latest
+        agentMountPath: /opt/appdynamics
+        imagePullPolicy: Always
+
+# InfraViz config
+infraViz:
+  nodeOS: "linux"
+  enableMasters: false
+  stdoutLogging: true
+  enableContainerHostId: true
+  enableServerViz: true
+  enableDockerViz: false
+
+# Netviz config
+netViz:
+  enabled: true
+  netVizPort: 3892
+  
+install:
+  metrics-server: true
